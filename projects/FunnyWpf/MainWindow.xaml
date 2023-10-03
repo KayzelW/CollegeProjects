@@ -1,0 +1,20 @@
+﻿<Window x:Class="FunnyWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FunnyWpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="600" x:Name="mainWindow">
+    <Grid HorizontalAlignment="Center">
+        <StackPanel>
+            <TextBlock x:Name="textTarget" Text="Boring text" HorizontalAlignment="Left"/>
+            <TextBox x:Name="textBox" Text="Funny text?(" HorizontalAlignment="Left"/>
+            <Button Visibility="Hidden" x:Name="button" Content="Funny red button" HorizontalAlignment="Left" Click="superButton" Background="#FFDA2222" />
+            <Grid Width="366">
+                <Button x:Name="cube" Content="Куб int" HorizontalAlignment="Left" Click="cube_Click"/>
+                <Button x:Name="square" Content="Квадрат int" HorizontalAlignment="Right" Click="square_Click"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

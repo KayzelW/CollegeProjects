@@ -1,0 +1,54 @@
+﻿<Window x:Class="TwoWindows.SupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TwoWindows"
+        mc:Ignorable="d"
+        Title="SupWindow" Height="450" Width="800"
+        Name="supWindow">
+    <Grid>
+        <StackPanel>
+            <Menu VerticalAlignment="Top">
+                <MenuItem Header="File">
+                    <MenuItem Header="Open new file"></MenuItem>
+                    <MenuItem Header="Open Project"></MenuItem>
+                    <Separator/>
+                    <MenuItem Header="Exit" Click="Exit_Click"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Bad button" Background="Red">
+                    <MenuItem Header="Вычислить!" Background="Green" Click="Calculate_Click"/>
+                </MenuItem>
+            </Menu>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Регистрация?" Grid.Row="1" Grid.Column="0" Height="30" Background="Aqua"></TextBlock>
+                <StackPanel Grid.Row="2">
+                    <TextBlock Text="Логин"></TextBlock>
+                    <TextBox  Name="textBox"></TextBox>
+                </StackPanel>
+                <StackPanel Grid.Row="3">
+                    <TextBlock  Text="Email"></TextBlock>
+                    <TextBox Name="emailBox"></TextBox>
+                </StackPanel>
+                <StackPanel Grid.Row="4">
+                    <TextBlock Text="Пароль"></TextBlock>
+                    <PasswordBox PasswordChar="✨" MinHeight="20" Name="passwordBox" FontSize="8"></PasswordBox>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

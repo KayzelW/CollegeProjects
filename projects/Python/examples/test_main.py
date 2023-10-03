@@ -1,0 +1,106 @@
+import region
+from PyQt6 import QtCore, QtWidgets
+from PyQt6.QtWidgets import QMainWindow
+from Try1_VisualPython.view import DiagramWindow
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setObjectName("MainWindow")
+        self.resize(496, 403)
+        self.centralwidget = QtWidgets.QWidget(self)
+        self.centralwidget.setObjectName("centralwidget")
+        self.widget = QtWidgets.QWidget(parent=self.centralwidget)
+        self.widget.setGeometry(QtCore.QRect(160, 80, 159, 188))
+        self.widget.setObjectName("widget")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.widget)
+        self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.label_6 = QtWidgets.QLabel(parent=self.widget)
+        self.label_6.setObjectName("label_6")
+        self.verticalLayout_3.addWidget(self.label_6, 0, QtCore.Qt.AlignmentFlag.AlignHCenter)
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.verticalLayout = QtWidgets.QVBoxLayout()
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.label = QtWidgets.QLabel(parent=self.widget)
+        self.label.setObjectName("x1Label")
+        self.horizontalLayout.addWidget(self.label)
+        self.lineEdit = QtWidgets.QLineEdit(parent=self.widget)
+        self.lineEdit.setObjectName("lineEdit")
+        self.horizontalLayout.addWidget(self.lineEdit)
+        self.verticalLayout.addLayout(self.horizontalLayout)
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.label_2 = QtWidgets.QLabel(parent=self.widget)
+        self.label_2.setObjectName("x2Label")
+        self.horizontalLayout_2.addWidget(self.label_2)
+        self.lineEdit_2 = QtWidgets.QLineEdit(parent=self.widget)
+        self.lineEdit_2.setObjectName("lineEdit_2")
+        self.horizontalLayout_2.addWidget(self.lineEdit_2)
+        self.verticalLayout.addLayout(self.horizontalLayout_2)
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.label_3 = QtWidgets.QLabel(parent=self.widget)
+        self.label_3.setObjectName("aLabel")
+        self.horizontalLayout_3.addWidget(self.label_3)
+        self.lineEdit_3 = QtWidgets.QLineEdit(parent=self.widget)
+        self.lineEdit_3.setObjectName("lineEdit_3")
+        self.horizontalLayout_3.addWidget(self.lineEdit_3)
+        self.verticalLayout.addLayout(self.horizontalLayout_3)
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.label_4 = QtWidgets.QLabel(parent=self.widget)
+        self.label_4.setObjectName("bLabel")
+        self.horizontalLayout_4.addWidget(self.label_4)
+        self.lineEdit_4 = QtWidgets.QLineEdit(parent=self.widget)
+        self.lineEdit_4.setObjectName("lineEdit_4")
+        self.horizontalLayout_4.addWidget(self.lineEdit_4)
+        self.verticalLayout.addLayout(self.horizontalLayout_4)
+        self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_5.setObjectName("horizontalLayout_5")
+        self.label_5 = QtWidgets.QLabel(parent=self.widget)
+        self.label_5.setObjectName("cLabel")
+        self.horizontalLayout_5.addWidget(self.label_5)
+        self.lineEdit_5 = QtWidgets.QLineEdit(parent=self.widget)
+        self.lineEdit_5.setObjectName("lineEdit_5")
+        self.horizontalLayout_5.addWidget(self.lineEdit_5)
+        self.verticalLayout.addLayout(self.horizontalLayout_5)
+        self.verticalLayout_2.addLayout(self.verticalLayout)
+
+        self.pushButton = QtWidgets.QPushButton(parent=self.widget)
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton.clicked.connect(self.work)
+
+
+        self.verticalLayout_2.addWidget(self.pushButton)
+        self.verticalLayout_3.addLayout(self.verticalLayout_2)
+        self.setCentralWidget(self.centralwidget)
+
+        #region translates
+        QtCore.QMetaObject.connectSlotsByName(self)
+        _translate = QtCore.QCoreApplication.translate
+        self.setWindowTitle(_translate("MainWindow", "Посторить график"))
+        self.label_6.setText(_translate("MainWindow", "y = ax^2+bx+c"))
+        self.label.setText(_translate("MainWindow", "X1"))
+        self.label_2.setText(_translate("MainWindow", "X2"))
+        self.label_3.setText(_translate("MainWindow", "A"))
+        self.label_4.setText(_translate("MainWindow", "B"))
+        self.label_5.setText(_translate("MainWindow", "C"))
+        self.pushButton.setText(_translate("MainWindow", "Построить"))
+        #endregion
+
+
+    def work(self):
+        self.d = DiagramWindow()
+        self.d.plot_function()
+        self.d.show()
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Main = MainWindow()
+    Main.show()
+    sys.exit(app.exec())

@@ -1,0 +1,8 @@
+E:\kapit\CSharp_ColledgeEdition-master\textBorder\ConsoleApps\bin\Debug\ConsoleApps.exe.config
+E:\kapit\CSharp_ColledgeEdition-master\textBorder\ConsoleApps\bin\Debug\ConsoleApps.exe
+E:\kapit\CSharp_ColledgeEdition-master\textBorder\ConsoleApps\bin\Debug\ConsoleApps.pdb
+E:\kapit\CSharp_ColledgeEdition-master\textBorder\ConsoleApps\obj\Debug\ConsoleApps.csproj.AssemblyReference.cache
+E:\kapit\CSharp_ColledgeEdition-master\textBorder\ConsoleApps\obj\Debug\ConsoleApps.csproj.SuggestedBindingRedirects.cache
+E:\kapit\CSharp_ColledgeEdition-master\textBorder\ConsoleApps\obj\Debug\ConsoleApps.csproj.CoreCompileInputs.cache
+E:\kapit\CSharp_ColledgeEdition-master\textBorder\ConsoleApps\obj\Debug\ConsoleApps.exe
+E:\kapit\CSharp_ColledgeEdition-master\textBorder\ConsoleApps\obj\Debug\ConsoleApps.pdb
