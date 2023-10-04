@@ -3,7 +3,7 @@ from PyQt6.QtWidgets import QMainWindow, QMessageBox
 from view import *
 
 
-class EnterDataWindow():
+class EnterDataWindow:
     def __init__(self):
         self.dialogWindow = DiagramWindow()
         self.__window = QtWidgets.QMainWindow()

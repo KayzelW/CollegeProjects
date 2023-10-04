@@ -1,0 +1,8 @@
+D:\projects\CSharp_ColledgeEdition-master\mdk01.02-1\mdk01.02-2\bin\Debug\mdk01.02-2.exe.config
+D:\projects\CSharp_ColledgeEdition-master\mdk01.02-1\mdk01.02-2\bin\Debug\mdk01.02-2.exe
+D:\projects\CSharp_ColledgeEdition-master\mdk01.02-1\mdk01.02-2\bin\Debug\mdk01.02-2.pdb
+D:\projects\CSharp_ColledgeEdition-master\mdk01.02-1\mdk01.02-2\obj\Debug\mdk01.02-2.csproj.AssemblyReference.cache
+D:\projects\CSharp_ColledgeEdition-master\mdk01.02-1\mdk01.02-2\obj\Debug\mdk01.02-2.csproj.SuggestedBindingRedirects.cache
+D:\projects\CSharp_ColledgeEdition-master\mdk01.02-1\mdk01.02-2\obj\Debug\mdk01.02-2.csproj.CoreCompileInputs.cache
+D:\projects\CSharp_ColledgeEdition-master\mdk01.02-1\mdk01.02-2\obj\Debug\mdk01.02-2.exe
+D:\projects\CSharp_ColledgeEdition-master\mdk01.02-1\mdk01.02-2\obj\Debug\mdk01.02-2.pdb
