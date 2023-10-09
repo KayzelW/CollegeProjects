@@ -75,7 +75,7 @@ namespace DatabaseView {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DatabaseView;component/updaterecord.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DatabaseView;V1.0.0.0;component/updaterecord.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\UpdateRecord.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
