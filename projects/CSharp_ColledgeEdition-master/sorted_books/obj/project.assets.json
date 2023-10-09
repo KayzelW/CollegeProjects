@@ -1314,7 +1314,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\student\\.nuget\\packages\\": {},
+    "C:\\Users\\Kayzel\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
@@ -1323,14 +1323,14 @@
       "projectUniqueName": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\sorted_books\\sorted_books.csproj",
       "projectName": "sorted_books",
       "projectPath": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\sorted_books\\sorted_books.csproj",
-      "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Kayzel\\.nuget\\packages\\",
       "outputPath": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\sorted_books\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kayzel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1389,7 +1389,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -26,19 +26,21 @@ internal class Program
 
         FileInfo outputFile = new FileInfo(pathOutput);
 
-        var library = new Library();
+        var library = new Library("Library2");
         var books = library.Books;
         var readers = library.Readers;
-
+        
         try
         {
-            Book.TryBookReadFromFile(pathInputBooks, ref dbContext);
-            Reader.TryReaderReadFromFile(pathInputReaders, ref dbContext);
+            Book.TryBookReadFromFile(pathInputBooks, books);
+            Reader.TryReaderReadFromFile(pathInputReaders, readers);
+            library.Dirty();
         }
         catch { Environment.Exit(69); }
 
         //File.WriteAllLinesAsync(outputFile.FullName, books.Select(book => book.ToString()));
-                        
+
+        dbContext.Libraries.Add(library);
         dbContext.SaveChanges();
 
         Console.WriteLine("Done");

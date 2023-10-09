@@ -9,6 +9,7 @@ public class Reader : INotifyPropertyChanged
 {
     [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; private set; }
+    [ForeignKey(nameof(Library))]
     public int LibraryId { get; set; }
     public Library Library { get; set; }
     public string Name { get; private set; }
@@ -41,7 +42,7 @@ public class Reader : INotifyPropertyChanged
         catch { return false; }
         return true;
     }
-    public static bool TryReaderReadFromFile(string pathInput, ref AppDbContext dbContext)
+    public static bool TryReaderReadFromFile(string pathInput, ObservableCollection<Reader> readers)
     {
         try
         {
@@ -51,7 +52,8 @@ public class Reader : INotifyPropertyChanged
             foreach (var line in lines)
             {
                 var s = line.Split();
-                dbContext.Readers.Add(new Reader(s[0], s[1], s[2]));
+                var reader = new Reader(s[0], s[1], s[2]);
+                readers.Add(reader);
             }
         }
         catch { return false; }

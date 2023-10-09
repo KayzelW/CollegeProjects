@@ -7,6 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace sorted_books;
 
@@ -15,9 +16,14 @@ public class Library : INotifyPropertyChanged
     [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
     public string Name { get; set; }
-    public ObservableCollection<Book> Books { get; set; }
-    public ObservableCollection<Reader> Readers { get; set; }
+    public ObservableCollection<Book> Books { get; set; } = new ObservableCollection<Book>();
+    public ObservableCollection<Reader> Readers { get; set; } = new ObservableCollectionListSource<Reader>();
     public Library() { }
+
+    public Library(string name)
+    {
+        Name = name;
+    }
     public Library(string name, ref ObservableCollection<Book> books, ref ObservableCollection<Reader> readers) : this()
     {
         Name = name;

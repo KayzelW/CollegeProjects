@@ -10,6 +10,7 @@ public class Book //: INotifyPropertyChanged
 {
     [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
+    [ForeignKey(nameof(Library))]
     public int LibraryId { get; set; }
     public Library Library { get; set; }
     public string Title { get; set; }
@@ -37,7 +38,7 @@ public class Book //: INotifyPropertyChanged
         return $"{Title} {Author} {Page} {AgeRelease};";
     }
 
-    public static bool TryBookReadFromFile(string pathInput, ref AppDbContext dbContext)
+    public static bool TryBookReadFromFile(string pathInput, ObservableCollection<Book> books)
     {
         try
         {
@@ -47,7 +48,8 @@ public class Book //: INotifyPropertyChanged
             foreach (var line in lines)
             {
                 var s = line.Split();
-                dbContext.Books.Add(new Book(s[0], s[1], int.Parse(s[2]), int.Parse(s[3])));
+                var book = new Book(s[0], s[1], int.Parse(s[2]), int.Parse(s[3]));
+                books.Add(book);
             }
         }
         catch { return false; }
