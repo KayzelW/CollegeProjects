@@ -24,7 +24,7 @@ public class Library : INotifyPropertyChanged
     {
         Name = name;
     }
-    public Library(string name, ref ObservableCollection<Book> books, ref ObservableCollection<Reader> readers) : this()
+    public Library(string name, ObservableCollection<Book> books, ObservableCollection<Reader> readers) : this()
     {
         Name = name;
         Books = books;

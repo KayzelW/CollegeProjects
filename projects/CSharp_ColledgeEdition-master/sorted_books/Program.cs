@@ -1,7 +1,4 @@
-﻿
-
-using Microsoft.EntityFrameworkCore;
-using System.Collections.ObjectModel;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace sorted_books;
 
@@ -17,8 +14,14 @@ internal class Program
         AppDbContext dbContext = new AppDbContext(optionsBuilder.Options); // создание объекта БД
         dbContext.Database.EnsureCreated();
 
+        
 
+        Console.WriteLine("ReadyForWork");
 
+        //MainWindow mainWindow = new MainWindow();
+    }
+    private void ExecuteSmth(string executePath, AppDbContext dbContext)
+    {
         var localPath = executePath.Substring(0, executePath.IndexOf("\\bin"));
         var pathInputBooks = localPath + "\\books.txt";
         var pathOutput = localPath + "\\output.txt";
@@ -29,7 +32,7 @@ internal class Program
         var library = new Library("Library2");
         var books = library.Books;
         var readers = library.Readers;
-        
+
         try
         {
             Book.TryBookReadFromFile(pathInputBooks, books);
@@ -42,7 +45,5 @@ internal class Program
 
         dbContext.Libraries.Add(library);
         dbContext.SaveChanges();
-
-        Console.WriteLine("Done");
     }
 }
