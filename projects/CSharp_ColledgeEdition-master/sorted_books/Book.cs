@@ -17,12 +17,13 @@ public class Book //: INotifyPropertyChanged
     public string Author { get; set; }
     public int Page { get; set; }
     public int AgeRelease { get; set; }
+    
     public Book(string title, string author)
     {
         Title = title;
         Author = author;
     }
-
+    
     public Book(string title, string author, int page, int ageRelease) : this(title, author)
     {
         Page = page;
