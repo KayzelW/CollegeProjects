@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "2I6Fo003huYDJI/JnA7oi6haRLG76EVIMmOv/IsnL0M3kB1WjXjJtvenv+omUVexGSDQYpyswFRKc5u9cn7FFA==",
+  "dgSpecHash": "unZiRShEGY1DVszmhXLdaiYKpy0DxbMx3mCLfvdjWVyIjkgOLMkm40bA6irh/LuXJPaiEN1idbAcUR5Ue2hbyw==",
   "success": true,
   "projectFilePath": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\PagesAndWindows\\PagesAndWindows.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.23\\microsoft.windowsdesktop.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.23\\microsoft.netcore.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.23\\microsoft.aspnetcore.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.23\\microsoft.netcore.app.host.win-x64.6.0.23.nupkg.sha512"
+  ],
   "logs": []
 }
