@@ -54,6 +54,10 @@ namespace Trade
         }
         #endregion
 
+        /// <summary>
+        /// Функция читает файлы во внутренние поля.
+        /// </summary>
+        /// <param name="localPath"></param>
         public void ReadFromFile(string localPath)
         {
             this.Clients = Client.ReadFromFile(localPath);
@@ -61,6 +65,11 @@ namespace Trade
             this.Orders = Order.ReadFromFile(localPath);
         }
 
+        /// <summary>
+        /// Пробует читать файлы во внутренни поля
+        /// </summary>
+        /// <param name="localPath"></param>
+        /// <returns></returns>
         public bool TryReadFromFile(string localPath)
         {
             try

@@ -24,19 +24,27 @@ namespace Trade.ContentClasses
             this.OrderDate = orderDate;
             this.Amount = amount;
         }
-        private Order(List<string> data)
+        /// <summary>
+        /// Внутренний конструктор.
+        /// </summary>
+        /// <param name="data"></param>
+        private Order(List<string> data) : this(DateTime.Parse(data[3], CultureInfo.InvariantCulture), double.Parse(data[4].Replace('.', ',')))
         {
             Id = int.Parse(data[0]);
             ManagerId = int.Parse(data[1]);
             ClientId = int.Parse(data[2]);
-            OrderDate = DateTime.Parse(data[3], CultureInfo.InvariantCulture);
-            Amount = double.Parse(data[4].Replace('.', ','));
         }
 
         public override string ToString()
         {
             return new StringBuilder().Append(Id).Append(ManagerId).Append(ClientId).Append(OrderDate).ToString();
         }
+
+        /// <summary>
+        /// Функция читает файлы и возвращает список.
+        /// </summary>
+        /// <param name="localPath"></param>
+        /// <returns></returns>
         public static ObservableCollection<Order> ReadFromFile(string localPath)
         {
             var file = new FileInfo(localPath + @"\ToRead\order.txt");

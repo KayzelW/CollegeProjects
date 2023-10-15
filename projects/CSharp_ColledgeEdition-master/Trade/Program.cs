@@ -18,8 +18,9 @@ namespace Trade
             AppDbContext dbContext = new AppDbContext(optionsBuilder.Options); // создание объекта БД
             dbContext.Database.EnsureCreated();
 
-            var trade = new TradeOffer();
+            var trade = dbContext.Trades.ToList();
 
+            //Закоментированный тест ввода из файла.
 
             //trade.ReadFromFile(localPath);
             //dbContext.Trades.Add(trade);

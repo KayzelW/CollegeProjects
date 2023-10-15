@@ -21,6 +21,10 @@ namespace Trade.ContentClasses
             City = city;
             Rating = rating;
         }
+        /// <summary>
+        /// Внутренний конструктор.
+        /// </summary>
+        /// <param name="data"></param>
         private Client(List<string> data) : this(data[1], data[2], int.Parse(data[3]))
         {
             Id = int.Parse(data[0]);
@@ -31,6 +35,12 @@ namespace Trade.ContentClasses
         {
             return new StringBuilder().Append(Id).Append(Name).Append(City).Append(Rating).Append(ManagerID).ToString();
         }
+
+        /// <summary>
+        /// Функция читает файлы и возвращает список.
+        /// </summary>
+        /// <param name="localPath"></param>
+        /// <returns></returns>
         public static ObservableCollection<Client> ReadFromFile(string localPath)
         {
             var file = new FileInfo(localPath + @"\ToRead\client.txt");
