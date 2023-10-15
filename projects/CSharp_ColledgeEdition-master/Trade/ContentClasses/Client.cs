@@ -33,7 +33,7 @@ namespace Trade.ContentClasses
 
         public override string ToString()
         {
-            return new StringBuilder().Append(Id).Append(Name).Append(City).Append(Rating).Append(ManagerID).ToString();
+            return $"{Id} {Name} {City} {Rating} {ManagerID}";
         }
 
         /// <summary>

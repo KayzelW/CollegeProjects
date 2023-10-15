@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 using sorted_books;
+using Trade.ContentClasses;
 
 namespace Trade
 {
@@ -18,7 +19,7 @@ namespace Trade
             AppDbContext dbContext = new AppDbContext(optionsBuilder.Options); // создание объекта БД
             dbContext.Database.EnsureCreated();
 
-            var trade = dbContext.Trades.ToList();
+            var trades = dbContext.Trades.ToList();
 
             //Закоментированный тест ввода из файла.
 
@@ -27,7 +28,13 @@ namespace Trade
             //dbContext.SaveChanges();
             //Environment.Exit(1); //БД пуста - заполнение из файлов
             //Console.WriteLine("Done");
-
+            
+            var orders = dbContext.Orders.ToList();
+            var comparer = new OrderComparer();
+            orders.Sort(comparer);
+            orders.Reverse();
+            Console.WriteLine(@"Id ManagerId ClientId OrderDate Amount");
+            orders.ForEach(x => Console.WriteLine(x));
 
             dbContext.SaveChanges();
         }

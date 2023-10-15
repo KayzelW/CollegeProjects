@@ -33,7 +33,7 @@ namespace Trade.ContentClasses
         }
         public override string ToString()
         {
-            return new StringBuilder().Append(Name).Append(City).Append(Comm).ToString();
+            return $"{Name} {City} {Comm}";
         }
         /// <summary>
         /// Функция читает файлы и возвращает список.
