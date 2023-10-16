@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<<< HEAD:projects/CSharp_ColledgeEdition-master/Trade/obj/project.nuget.cache
   "dgSpecHash": "ariV7TMhj2sDlMR7y7tDG/NKTNIsfvnGBZVsJ3nvUbVLGfsVv4lOvSHr/t4HHxUGabxC2EVOjXpbqsmXuDRekQ==",
+========
+  "dgSpecHash": "0du3SBaNiaGrpM5PMxH7xRQUlJj9fx9UBEFG0o2oDUx039EjjiOuN+HpET/NqvIszRTkmDTeyzKVe9R9jk+aTQ==",
+>>>>>>>> 07f66a1c456d0d5778fe1fcd19b6dfeaf9e32c4b:projects/CSharp_ColledgeEdition-master/sorted_books/obj/project.nuget.cache
   "success": true,
   "projectFilePath": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\Trade\\Trade.csproj",
   "expectedPackageFiles": [
@@ -29,8 +33,13 @@
     "C:\\Users\\Kayzel\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Kayzel\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\Kayzel\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
+<<<<<<<< HEAD:projects/CSharp_ColledgeEdition-master/Trade/obj/project.nuget.cache
     "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.23\\microsoft.windowsdesktop.app.ref.6.0.23.nupkg.sha512",
     "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.23\\microsoft.netcore.app.ref.6.0.23.nupkg.sha512",
+========
+    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.23\\microsoft.netcore.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.23\\microsoft.windowsdesktop.app.ref.6.0.23.nupkg.sha512",
+>>>>>>>> 07f66a1c456d0d5778fe1fcd19b6dfeaf9e32c4b:projects/CSharp_ColledgeEdition-master/sorted_books/obj/project.nuget.cache
     "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.23\\microsoft.aspnetcore.app.ref.6.0.23.nupkg.sha512",
     "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.23\\microsoft.netcore.app.host.win-x64.6.0.23.nupkg.sha512"
   ],
