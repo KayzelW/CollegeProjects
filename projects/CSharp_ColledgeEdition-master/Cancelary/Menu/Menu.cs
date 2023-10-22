@@ -46,7 +46,6 @@ namespace Menu
             deps.ForEach(x => dbContext.Departments.Add(x));
 
             dbContext.SaveChanges();
-
         }
 
         private void WriteBTN_Click(object sender, EventArgs e)
@@ -65,7 +64,7 @@ namespace Menu
             {
                 var str = line.Split();
                 var result = docs.Where(x => (x.Sender == int.Parse(str[0])));  //&& (x.DocTypeId == int.Parse(str[1])) - вырезано из-за малых входных данных
-
+                
                 foreach (var item in result)
                 {
                     dataGridView.Rows.Add(item.Id, item.Number, item.Name, item.RegistrationTime.ToShortDateString());

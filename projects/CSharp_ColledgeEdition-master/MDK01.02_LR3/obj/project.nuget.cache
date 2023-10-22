@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Goqtbx/Rv2na6y7eaKSCENwM2Nwi8fa5a6/0i0JrA+FaTaSjtgjeCJYW6YrODkqhwtjFCMUHOr2Vcx/X+pqZyQ==",
+  "success": true,
+  "projectFilePath": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\MDK01.02_LR3\\MDK01.02_LR3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.23\\microsoft.windowsdesktop.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.23\\microsoft.netcore.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.23\\microsoft.aspnetcore.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.23\\microsoft.netcore.app.host.win-x64.6.0.23.nupkg.sha512"
+  ],
+  "logs": []
+}

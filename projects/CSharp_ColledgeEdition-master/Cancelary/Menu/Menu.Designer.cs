@@ -38,9 +38,9 @@
             // 
             // DBRedescribeBTN
             // 
-            DBRedescribeBTN.Location = new Point(12, 22);
+            DBRedescribeBTN.Location = new Point(12, 23);
             DBRedescribeBTN.Name = "DBRedescribeBTN";
-            DBRedescribeBTN.Size = new Size(217, 23);
+            DBRedescribeBTN.Size = new Size(217, 25);
             DBRedescribeBTN.TabIndex = 0;
             DBRedescribeBTN.Text = "Перезаписать данные из файлов";
             DBRedescribeBTN.UseVisualStyleBackColor = true;
@@ -48,9 +48,9 @@
             // 
             // WriteBTN
             // 
-            WriteBTN.Location = new Point(12, 51);
+            WriteBTN.Location = new Point(12, 54);
             WriteBTN.Name = "WriteBTN";
-            WriteBTN.Size = new Size(217, 23);
+            WriteBTN.Size = new Size(217, 25);
             WriteBTN.TabIndex = 1;
             WriteBTN.Text = "Вывести данные";
             WriteBTN.UseVisualStyleBackColor = true;
@@ -58,9 +58,9 @@
             // 
             // Exit
             // 
-            Exit.Location = new Point(12, 228);
+            Exit.Location = new Point(12, 243);
             Exit.Name = "Exit";
-            Exit.Size = new Size(75, 23);
+            Exit.Size = new Size(75, 25);
             Exit.TabIndex = 3;
             Exit.Text = "Выйти";
             Exit.UseVisualStyleBackColor = true;
@@ -69,18 +69,18 @@
             // dataGridView
             // 
             dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView.Location = new Point(248, 22);
+            dataGridView.Location = new Point(248, 23);
             dataGridView.Name = "dataGridView";
             dataGridView.RowTemplate.Height = 25;
-            dataGridView.Size = new Size(450, 229);
+            dataGridView.Size = new Size(450, 244);
             dataGridView.TabIndex = 5;
             dataGridView.Visible = false;
             // 
             // About
             // 
-            About.Location = new Point(102, 228);
+            About.Location = new Point(102, 243);
             About.Name = "About";
-            About.Size = new Size(105, 23);
+            About.Size = new Size(105, 25);
             About.TabIndex = 6;
             About.Text = "О программе";
             About.UseVisualStyleBackColor = true;
@@ -88,10 +88,10 @@
             // 
             // Menu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(237, 266);
+            ClientSize = new Size(237, 284);
             Controls.Add(About);
             Controls.Add(dataGridView);
             Controls.Add(Exit);

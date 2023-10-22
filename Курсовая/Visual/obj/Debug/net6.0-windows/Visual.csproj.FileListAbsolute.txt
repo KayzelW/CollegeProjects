@@ -71,3 +71,12 @@ E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Курсовая\Visua
 E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Курсовая\Visual\obj\Debug\net6.0-windows\Visual.pdb
 E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Курсовая\Visual\obj\Debug\net6.0-windows\Visual.genruntimeconfig.cache
 E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Курсовая\Visual\obj\Debug\net6.0-windows\ref\Visual.dll
+E:\CollegeProjects\Курсовая\Visual\obj\Debug\net6.0-windows\Visual.csproj.AssemblyReference.cache
+E:\CollegeProjects\Курсовая\Visual\obj\Debug\net6.0-windows\Console\ConsoleWindow.g.cs
+E:\CollegeProjects\Курсовая\Visual\obj\Debug\net6.0-windows\MainWindow.g.cs
+E:\CollegeProjects\Курсовая\Visual\obj\Debug\net6.0-windows\App.g.cs
+E:\CollegeProjects\Курсовая\Visual\obj\Debug\net6.0-windows\Visual_MarkupCompile.cache
+E:\CollegeProjects\Курсовая\Visual\obj\Debug\net6.0-windows\Visual_MarkupCompile.lref
+E:\CollegeProjects\Курсовая\Visual\obj\Debug\net6.0-windows\Visual.dll
+E:\CollegeProjects\Курсовая\Visual\obj\Debug\net6.0-windows\refint\Visual.dll
+E:\CollegeProjects\Курсовая\Visual\obj\Debug\net6.0-windows\Visual.pdb

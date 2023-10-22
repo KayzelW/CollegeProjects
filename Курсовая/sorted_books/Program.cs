@@ -18,6 +18,7 @@ public class Program
         dbContext.Database.EnsureCreated();
 
         Console.WriteLine("ReadyForWork");
+        dbContext.Books.ToList().ForEach(x => Console.WriteLine(x.ToString()));
 
         //MainWindow mainWindow = new MainWindow();
     }

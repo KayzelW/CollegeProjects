@@ -15,7 +15,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using sorted_books;
-using Visual.Console;
 
 namespace Visual
 {
@@ -39,11 +38,6 @@ namespace Visual
 
             var data = dbContext.Books.ToList().ConvertAll(x => x.ToString());
             data.ForEach(x => textBox.Text += x + '\n');
-
-            ConsoleWindow Console = new ConsoleWindow();
-            Console.Show();
-
-            data.ForEach(x => Console.WriteLine(x));
 
             InitializeComponent();
         }

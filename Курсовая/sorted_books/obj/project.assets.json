@@ -1393,23 +1393,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\student\\.nuget\\packages\\": {},
+    "C:\\Users\\Kayzel\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\Курсовая\\sorted_books\\sorted_books.csproj",
+      "projectUniqueName": "E:\\CollegeProjects\\Курсовая\\sorted_books\\sorted_books.csproj",
       "projectName": "sorted_books",
-      "projectPath": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\Курсовая\\sorted_books\\sorted_books.csproj",
-      "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-      "outputPath": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\Курсовая\\sorted_books\\obj\\",
+      "projectPath": "E:\\CollegeProjects\\Курсовая\\sorted_books\\sorted_books.csproj",
+      "packagesPath": "C:\\Users\\Kayzel\\.nuget\\packages\\",
+      "outputPath": "E:\\CollegeProjects\\Курсовая\\sorted_books\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kayzel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
