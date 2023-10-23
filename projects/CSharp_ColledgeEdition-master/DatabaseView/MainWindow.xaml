@@ -6,29 +6,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DatabaseView"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="687" ResizeMode="NoResize">
-    <DockPanel>
-        <Grid DockPanel.Dock="Left" HorizontalAlignment="Left">
-            <ListView x:Name="usersListView" ItemsSource="{Binding Users}" HorizontalAlignment="Center" Width="400" VerticalAlignment="Top"
-                      MaxHeight="360" DockPanel.Dock="Top">
-                <ListView.View>
-                    <GridView>
-                        <GridViewColumn Header="ID" Width="50" DisplayMemberBinding="{Binding Id}" />
-                        <GridViewColumn Header="Name" Width="200" DisplayMemberBinding="{Binding Name}" />
-                        <GridViewColumn Header="Email" Width="150" DisplayMemberBinding="{Binding Email}" />
-                    </GridView>
-                </ListView.View>
-            </ListView>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="40" VerticalAlignment="Bottom" DockPanel.Dock="Bottom">
-                <Button Content="Добавить" Width="70" Height="30" Margin="5" Click="AddButton_Click"/>
-                <Button Content="Обновить" Width="70" Height="30" Margin="5" Click="UpdateButton_Click"/>
-                <Button Content="Удалить"  Width="70" Height="30" Margin="5" Click="DeleteButton_Click"/>
-                <Button Content="График"  Width="70" Height="30" Margin="5" Click="PlotViewButton_Click"/>
-            </StackPanel>
-        </Grid>
-        
-        <Canvas>
-            <Path x:Name="plotComponent" Stroke="Orange" StrokeThickness="2" Data="{Binding }"/>
-        </Canvas>
-    </DockPanel>
+        Title="MainWindow" Height="450" Width="401" ResizeMode="NoResize">
+    <Grid>
+        <ListView x:Name="usersListView" ItemsSource="{Binding Users}" HorizontalAlignment="Center" Width="400" VerticalAlignment="Top"
+                      MaxHeight="360">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" Width="50" DisplayMemberBinding="{Binding Id}" />
+                    <GridViewColumn Header="Name" Width="200" DisplayMemberBinding="{Binding Name}" />
+                    <GridViewColumn Header="Email" Width="150" DisplayMemberBinding="{Binding Email}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="40" VerticalAlignment="Bottom">
+            <Button Content="Добавить" Width="70" Height="30" Margin="5" Click="AddButton_Click"/>
+            <Button Content="Обновить" Width="70" Height="30" Margin="5" Click="UpdateButton_Click"/>
+            <Button Content="Удалить"  Width="70" Height="30" Margin="5" Click="DeleteButton_Click"/>
+        </StackPanel>
+    </Grid>
 </Window>

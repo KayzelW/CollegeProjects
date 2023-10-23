@@ -202,3 +202,5 @@ E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\DatabaseView\obj\Debug
 E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\DatabaseView\obj\Debug\net6.0-windows\DatabaseView.pdb
 E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\DatabaseView\obj\Debug\net6.0-windows\DatabaseView.genruntimeconfig.cache
 E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\DatabaseView\obj\Debug\net6.0-windows\ref\DatabaseView.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\DatabaseView\bin\Debug\net6.0-windows\LiveCharts.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\DatabaseView\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
