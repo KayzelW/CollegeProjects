@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Windows;
+using System.Windows.Media;
 
 namespace DatabaseView;
 
@@ -96,6 +97,36 @@ public partial class MainWindow : Window
 
     private void PlotViewButton_Click(object sender, RoutedEventArgs e)
     {
-        var users = dbContext.Users.ToList();
+        var pathGeometry = new PathGeometry();
+        var pathFigure = new PathFigure();
+
+        double x = 0;
+        foreach (var user in Users)
+        {
+            double y = user.Id; // Используйте Id пользователя как высоту на графике
+            var lineSegment = new LineSegment(new Point(x, y), true);
+            pathFigure.Segments.Add(lineSegment);
+            x += 20; // Перемещаемся по горизонтали на каждой итерации
+        }
+    
+        pathGeometry.Figures.Add(pathFigure);
+
+        var path = new System.Windows.Shapes.Path
+        {
+            Data = pathGeometry,
+            Stroke = Brushes.Blue,
+            StrokeThickness = 2
+        };
+
+        // Создаем окно для отображения графика
+        var graphWindow = new Window
+        {
+            Content = path,
+            Title = "График по возрастающим Id пользователей",
+            Width = x + 20, // Установите ширину окна, чтобы вместить весь график
+            Height = Users.Max(user => user.Id) + 20 // Установите высоту окна, чтобы вместить весь график
+        };
+
+        graphWindow.ShowDialog();
     }
 }

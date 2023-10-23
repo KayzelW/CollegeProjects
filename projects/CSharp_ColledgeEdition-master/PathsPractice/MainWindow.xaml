@@ -1,0 +1,34 @@
+﻿<Window x:Class="PathsPractice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PathsPractice"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="627" Width="800">
+    <DockPanel>
+        <Label x:Name="label" DockPanel.Dock="Top"/>
+        <Grid MinHeight="50" DockPanel.Dock="Top">
+            <StackPanel>
+                <TextBox x:Name="textBlock" MaxLines="1" Width="auto" Height="20"/>
+                <Button x:Name="button" Content="Кнопка" Click="button_Click" Width="60" Height="20"/>
+            </StackPanel>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Canvas x:Name="canvas" Grid.Column="0" />
+            <ListView x:Name="test" Grid.Column="1" Background="Orange">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="X" DisplayMemberBinding="{Binding X}" Width="50"/>
+                        <GridViewColumn Header="Y" DisplayMemberBinding="{Binding Y}" Width="50"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+
+    </DockPanel>
+</Window>
