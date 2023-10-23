@@ -1,8 +1,0 @@
-E:\kapit\CSharp_ColledgeEdition-master\02.10.2023\oop\oop\bin\Debug\oop.exe.config
-E:\kapit\CSharp_ColledgeEdition-master\02.10.2023\oop\oop\bin\Debug\oop.exe
-E:\kapit\CSharp_ColledgeEdition-master\02.10.2023\oop\oop\bin\Debug\oop.pdb
-E:\kapit\CSharp_ColledgeEdition-master\02.10.2023\oop\oop\obj\Debug\oop.csproj.AssemblyReference.cache
-E:\kapit\CSharp_ColledgeEdition-master\02.10.2023\oop\oop\obj\Debug\oop.csproj.SuggestedBindingRedirects.cache
-E:\kapit\CSharp_ColledgeEdition-master\02.10.2023\oop\oop\obj\Debug\oop.csproj.CoreCompileInputs.cache
-E:\kapit\CSharp_ColledgeEdition-master\02.10.2023\oop\oop\obj\Debug\oop.exe
-E:\kapit\CSharp_ColledgeEdition-master\02.10.2023\oop\oop\obj\Debug\oop.pdb

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "app", "app\app.csproj", "{16DA821E-CF3E-4D3F-8A7B-274CFCE6DB82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "app", "app\app.csproj", "{16DA821E-CF3E-4D3F-8A7B-274CFCE6DB82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Полезные знакомства", "Полезные знакомства\Полезные знакомства.csproj", "{46D4BACF-4B81-4D46-A4EE-0212C2805075}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{16DA821E-CF3E-4D3F-8A7B-274CFCE6DB82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16DA821E-CF3E-4D3F-8A7B-274CFCE6DB82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16DA821E-CF3E-4D3F-8A7B-274CFCE6DB82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46D4BACF-4B81-4D46-A4EE-0212C2805075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46D4BACF-4B81-4D46-A4EE-0212C2805075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46D4BACF-4B81-4D46-A4EE-0212C2805075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46D4BACF-4B81-4D46-A4EE-0212C2805075}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

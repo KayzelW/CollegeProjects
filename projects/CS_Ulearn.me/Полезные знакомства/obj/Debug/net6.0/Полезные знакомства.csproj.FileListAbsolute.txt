@@ -1,0 +1,15 @@
+E:\CollegeProjects\projects\CS_Ulearn.me\Полезные знакомства\obj\Debug\net6.0\Полезные знакомства.csproj.AssemblyReference.cache
+E:\CollegeProjects\projects\CS_Ulearn.me\Полезные знакомства\obj\Debug\net6.0\Полезные знакомства.GeneratedMSBuildEditorConfig.editorconfig
+E:\CollegeProjects\projects\CS_Ulearn.me\Полезные знакомства\obj\Debug\net6.0\Полезные знакомства.AssemblyInfoInputs.cache
+E:\CollegeProjects\projects\CS_Ulearn.me\Полезные знакомства\obj\Debug\net6.0\Полезные знакомства.AssemblyInfo.cs
+E:\CollegeProjects\projects\CS_Ulearn.me\Полезные знакомства\obj\Debug\net6.0\Полезные знакомства.csproj.CoreCompileInputs.cache
+E:\CollegeProjects\projects\CS_Ulearn.me\Полезные знакомства\bin\Debug\net6.0\Полезные знакомства.exe
+E:\CollegeProjects\projects\CS_Ulearn.me\Полезные знакомства\bin\Debug\net6.0\Полезные знакомства.deps.json
+E:\CollegeProjects\projects\CS_Ulearn.me\Полезные знакомства\bin\Debug\net6.0\Полезные знакомства.runtimeconfig.json
+E:\CollegeProjects\projects\CS_Ulearn.me\Полезные знакомства\bin\Debug\net6.0\Полезные знакомства.dll
+E:\CollegeProjects\projects\CS_Ulearn.me\Полезные знакомства\bin\Debug\net6.0\Полезные знакомства.pdb
+E:\CollegeProjects\projects\CS_Ulearn.me\Полезные знакомства\obj\Debug\net6.0\Полезные знакомства.dll
+E:\CollegeProjects\projects\CS_Ulearn.me\Полезные знакомства\obj\Debug\net6.0\refint\Полезные знакомства.dll
+E:\CollegeProjects\projects\CS_Ulearn.me\Полезные знакомства\obj\Debug\net6.0\Полезные знакомства.pdb
+E:\CollegeProjects\projects\CS_Ulearn.me\Полезные знакомства\obj\Debug\net6.0\Полезные знакомства.genruntimeconfig.cache
+E:\CollegeProjects\projects\CS_Ulearn.me\Полезные знакомства\obj\Debug\net6.0\ref\Полезные знакомства.dll

@@ -93,4 +93,9 @@ public partial class MainWindow : Window
             Users.Remove(user);
         }
     }
+
+    private void PlotViewButton_Click(object sender, RoutedEventArgs e)
+    {
+        var users = dbContext.Users.ToList();
+    }
 }
