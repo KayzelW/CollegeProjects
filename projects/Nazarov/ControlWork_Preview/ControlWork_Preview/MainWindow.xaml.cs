@@ -1,9 +1,12 @@
 ﻿using ControlWork_Preview.Classes;
+using ControlWork_Preview.Windows;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -23,21 +26,110 @@ namespace ControlWork_Preview;
 public partial class MainWindow : Window
 {
     private string resourcePath = Environment.CurrentDirectory.Substring(0, Environment.CurrentDirectory.IndexOf(@"\bin")) + @"\Resources";
-    private AppDbContext dbContext;
+    protected AppDbContext dbContext;
+    public int status { get; set; }
+
+    public Shop Shop;
+    public Vendings Vendings;
+
+    //private Thread check;
+
     public MainWindow()
     {
+        status = 1;
         InitializeComponent();
         InitializeDbContext();
+        //check = new Thread(StatusCheck);
+        //check.Start();
+        Closing += MainWindow_Closing;
+        this.Loaded += MainWindow_Loaded;
     }
+
+    private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+    {
+        this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+    }
+
+    private void MainWindow_Closing(object? sender, System.ComponentModel.CancelEventArgs e)
+    {
+        dbContext.SaveChanges();
+        Shop?.Close();
+        Vendings?.Close();
+        Environment.Exit(0);
+    }
+
     private void InitializeDbContext()
     {
-        var databasePath = System.IO.Path.Combine(Environment.CurrentDirectory, "MyDatabase.db"); //Путь к БД
-        var connectionString = $"Data Source={databasePath}"; // Строка подключения
         var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>(); // Конфигуратор БД
-        optionsBuilder.UseSqlite(connectionString); // Использовать эту строку подключения
-        
+        optionsBuilder.UseSqlite(
+                $"Data Source={System.IO.Path.Combine(Environment.CurrentDirectory, "MyDatabase.db")}"
+            ); // Использовать эту строку подключения
+
         dbContext = new AppDbContext(optionsBuilder.Options); // создание объекта БД
         dbContext.Database.EnsureCreated(); // Файл точно есть?
     }
 
+    private void Button_Click(object sender, RoutedEventArgs e)
+    {
+        var login = loginText.Text.Trim();
+        var password = passwordText.Password.Trim();
+        switch (login, password)
+        {
+            case ("root", "root"):
+                Shop ??= new Shop(resourcePath, ref dbContext);
+                Shop.Owner = this;
+                this.Shop.Show();
+                this.Hide();
+                ClearText();
+                break;
+            case ("user", "user"):
+                Vendings ??= new Vendings(resourcePath, ref dbContext);
+                Vendings.Owner = this;
+                this.Vendings.Show();
+                this.Hide();
+                ClearText();
+                break;
+            default:
+                status = 1;
+                ClearText();
+                break;
+        }
+    }
+
+    private void ClearText()
+    {
+        loginText.Text = String.Empty;
+        passwordText.Password = String.Empty;
+    }
+
+
+    //private CancellationTokenSource interruption = new();
+    /*
+    async private void StatusCheck()
+    {
+        while (!interruption.IsCancellationRequested)
+        {
+            this.Dispatcher.Invoke(() =>
+            {
+                switch (this.status)
+                {
+                    case 0:
+                        if (this.Visibility == Visibility.Visible)
+                            AuthWindow.Hide();
+                        break;
+                    case 1:
+                        if (this.Visibility == Visibility.Hidden)
+                            this.AuthWindow.Show();
+                        break;
+                }
+            });
+
+            try
+            {
+                await Task.Delay(1000, interruption.Token);
+            }
+            catch (Exception ex) { }
+        }
+    }
+    */
 }

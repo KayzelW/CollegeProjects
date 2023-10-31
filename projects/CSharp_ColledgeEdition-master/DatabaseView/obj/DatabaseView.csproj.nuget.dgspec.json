@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\DatabaseView\\DatabaseView.csproj": {}
+    "F:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\DatabaseView\\DatabaseView.csproj": {}
   },
   "projects": {
-    "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\DatabaseView\\DatabaseView.csproj": {
+    "F:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\DatabaseView\\DatabaseView.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\DatabaseView\\DatabaseView.csproj",
+        "projectUniqueName": "F:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\DatabaseView\\DatabaseView.csproj",
         "projectName": "DatabaseView",
-        "projectPath": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\DatabaseView\\DatabaseView.csproj",
+        "projectPath": "F:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\DatabaseView\\DatabaseView.csproj",
         "packagesPath": "C:\\Users\\Kayzel\\.nuget\\packages\\",
-        "outputPath": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\DatabaseView\\obj\\",
+        "outputPath": "F:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\DatabaseView\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

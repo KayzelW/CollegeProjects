@@ -23,5 +23,12 @@ public partial class Table : Window
     public Table()
     {
         InitializeComponent();
+        Closing += Table_Closing;
+    }
+
+    private void Table_Closing(object? sender, System.ComponentModel.CancelEventArgs e)
+    {
+        this.Hide();
+        e.Cancel = true;
     }
 }

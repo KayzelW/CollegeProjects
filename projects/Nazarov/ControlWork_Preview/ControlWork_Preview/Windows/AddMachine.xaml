@@ -1,0 +1,24 @@
+﻿<Window x:Class="ControlWork_Preview.Windows.AddMachine"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ControlWork_Preview.Windows"
+        mc:Ignorable="d"
+        Title="AddMachine" Height="450" Width="300">
+    <Grid>
+        <StackPanel>
+            <Label Content="ID"/>
+            <TextBox x:Name="Id" x:FieldModifier="public" Margin="10"/>
+            <Label Content="Марка"/>
+            <TextBox x:Name="Model" x:FieldModifier="public" Margin="10"/>
+            <Label Content="Год выпуска"/>
+            <TextBox x:Name="Year" x:FieldModifier="public" Margin="10"/>
+            <Label Content="Цвет"/>
+            <TextBox x:Name="Color" x:FieldModifier="public" Margin="10"/>
+            <Label Content="Страна исполнителя"/>
+            <TextBox x:Name="CountryPerformer" x:FieldModifier="public" Margin="10"/>
+            <Button Content="Сохранить" Click="Button_Click" Width="100" HorizontalAlignment="Right" Margin="0,10,10,0"/>
+        </StackPanel>
+    </Grid>
+</Window>

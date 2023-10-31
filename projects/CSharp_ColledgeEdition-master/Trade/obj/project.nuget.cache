@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ariV7TMhj2sDlMR7y7tDG/NKTNIsfvnGBZVsJ3nvUbVLGfsVv4lOvSHr/t4HHxUGabxC2EVOjXpbqsmXuDRekQ==",
+  "dgSpecHash": "RnvHFj+XmUilSNNstEzMnlY/4m2xc9J6/1GChYWauo+plli5xxmKLlc9UbkrOHW/pTxORBdv1MbNRjp9HgPN+g==",
   "success": true,
-  "projectFilePath": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\Trade\\Trade.csproj",
+  "projectFilePath": "F:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\Trade\\Trade.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.12\\microsoft.data.sqlite.core.7.0.12.nupkg.sha512",
     "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.12\\microsoft.entityframeworkcore.7.0.12.nupkg.sha512",
@@ -29,17 +29,10 @@
     "C:\\Users\\Kayzel\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Kayzel\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\Kayzel\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.23\\microsoft.windowsdesktop.app.ref.6.0.23.nupkg.sha512",
-    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.23\\microsoft.netcore.app.ref.6.0.23.nupkg.sha512",
-    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.23\\microsoft.aspnetcore.app.ref.6.0.23.nupkg.sha512",
-    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.23\\microsoft.netcore.app.host.win-x64.6.0.23.nupkg.sha512"
+    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.24\\microsoft.netcore.app.ref.6.0.24.nupkg.sha512",
+    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.24\\microsoft.windowsdesktop.app.ref.6.0.24.nupkg.sha512",
+    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.24\\microsoft.aspnetcore.app.ref.6.0.24.nupkg.sha512",
+    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.24\\microsoft.netcore.app.host.win-x64.6.0.24.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Ошибка чтения файла кэша E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\Trade\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

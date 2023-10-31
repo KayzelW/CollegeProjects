@@ -5,44 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MDK01._02_LR3"
         mc:Ignorable="d"
-        Title="MainWindow" x:Name="mainWindow" Height="240" Width="330" ResizeMode="NoResize">
+        Title="MainWindow" x:Name="mainWindow" Height="310" Width="320" ResizeMode="NoResize">
     <Grid HorizontalAlignment="Center">
         <StackPanel Orientation="Vertical" Margin="10">
             <Label Content="Решение уравнения:"/>
-            <TextBlock Text="y = |(2a-7.5x)^3|+e^(2b/x - a/2b)" TextAlignment="Center"/>
+            <Image x:Name="imageField" Stretch="UniformToFill"/>
+            
             <StackPanel Orientation="Horizontal"  Margin="0, 0, 0, 0">
                 <StackPanel Orientation="Vertical" Margin="0, 0, 20, 0">
                     <Label Content="x1" HorizontalAlignment="Center"/>
-                    <TextBox x:Name="x1TextBox" MinWidth="40" MaxLines="1"/>
+                    <TextBox x:Name="x1TextBox" MinWidth="40" MaxLines="1" Text="1"/>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Margin="0, 0, 20, 0">
                     <Label Content="x2" HorizontalAlignment="Center"/>
-                    <TextBox x:Name="x2TextBox" MinWidth="40" MaxLines="1"/>
+                    <TextBox x:Name="x2TextBox" MinWidth="40" MaxLines="1" Text="100"/>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Margin="0, 0, 20, 0">
                     <Label Content="a" HorizontalAlignment="Center"/>
-                    <TextBox x:Name="aTextBox" MinWidth="40" MaxLines="1"/>
+                    <TextBox x:Name="aTextBox" MinWidth="40" MaxLines="1" Text="1"/>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Margin="0, 0, 20, 0">
                     <Label Content="b" HorizontalAlignment="Center"/>
-                    <TextBox x:Name="bTextBox" MinWidth="40" MaxLines="1"/>
+                    <TextBox x:Name="bTextBox" MinWidth="40" MaxLines="1" Text="1"/>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Margin="0, 0, 0, 0">
                     <Label Content="dx" HorizontalAlignment="Center"/>
-                    <TextBox x:Name="dxTextBox" MinWidth="40" MaxLines="1"/>
+                    <TextBox x:Name="dxTextBox" MinWidth="40" MaxLines="1" Text="1"/>
                 </StackPanel>
             </StackPanel>
-            
+
             <Button x:Name="executeButton" Content="Вычислить" Margin="0, 20, 0, 5" Click="executeButton_Click"/>
-            
+
             <StackPanel Orientation="Horizontal" x:Name="errorView" Visibility="Hidden">
                 <Label Content="Ошибка: " VerticalAlignment="Top"/>
                 <TextBlock x:Name="errorTextBlock" Text="Нет ошибок" Height="15" VerticalAlignment="Center"/>
             </StackPanel>
-            
+
             <DockPanel>
-                <Button x:Name="eraseButton" Content="Очистить" Click="eraseButton_Click" HorizontalAlignment="Left"/>
-                <Button x:Name="aboutButton" Content="Справка" Click="aboutButton_Click" HorizontalAlignment="Right"/>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="eraseButton" Content="Очистить" Click="eraseButton_Click" Margin="0, 0, 30, 0"/>
+                    <Button x:Name="ExportButton" Content="Экспорт в Excel" Click="ExportButton_Click" Margin="10, 0, 10, 0"/>
+                    <Button x:Name="aboutButton" Content="Справка" Click="aboutButton_Click" Margin="30, 0, 0, 0"/>
+                </StackPanel>
             </DockPanel>
         </StackPanel>
     </Grid>
