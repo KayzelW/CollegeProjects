@@ -98,10 +98,9 @@ public partial class MainWindow : Window
 
     private void ClearText()
     {
-        loginText.Text = String.Empty;
-        passwordText.Password = String.Empty;
+        loginText.Text = string.Empty;
+        passwordText.Password = string.Empty;
     }
-
 
     //private CancellationTokenSource interruption = new();
     /*

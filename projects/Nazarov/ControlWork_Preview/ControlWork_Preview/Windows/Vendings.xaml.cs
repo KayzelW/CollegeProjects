@@ -44,25 +44,26 @@ public partial class Vendings : Window
 
     private void DataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
     {   
-        if (dataGrid.SelectedItem is Vending currentMachine)
+        if (dataGrid.SelectedItem is Vending possibleMachine)
         {
+            Vending? currentMachine = Machines.Where(x => x == possibleMachine).FirstOrDefault();
             var editMachine = new AddMachine();
             editMachine.Owner = this;
 
-            editMachine.Id.Text = currentMachine.Id.ToString();
+            editMachine.Id.Text = "Не будет обновлён";
             editMachine.Model.Text = currentMachine.Model;
             editMachine.Year.Text = currentMachine.Year;
             editMachine.Color.Text = currentMachine.Color;
             editMachine.CountryPerformer.Text = currentMachine.CountryPerformer;
 
             editMachine.ShowDialog();
-            currentMachine.Id = int.Parse(editMachine.Id.Text);
             currentMachine.Model = editMachine.Model.Text;
             currentMachine.Year = editMachine.Year.Text;
             currentMachine.Color = editMachine.Color.Text;
             currentMachine.CountryPerformer = editMachine.CountryPerformer.Text;
 
             currentMachine.Dirty();
+            dbContext.UpdateRange(Machines);
             dbContext.SaveChanges();
         }
     }
@@ -90,11 +91,16 @@ public partial class Vendings : Window
         newMachine.Owner = this;
         newMachine.ShowDialog();
 
-        Machines.Add(new Vending(
+        var machine = new Vending(
                     int.Parse(newMachine.Id.Text), newMachine.Model.Text, newMachine.Year.Text, newMachine.Color.Text, newMachine.CountryPerformer.Text
-        ));
+        );
 
-        dbContext!.SaveChanges();
+        Machines.Add(machine);
+        dbContext.Vendings.Add(machine);
+        dbContext.SaveChanges();
+        MessageBox.Show(Machines.Count.ToString(), "Machines");
+        MessageBox.Show(dbContext.Vendings.Count().ToString(), "DB");
+
     }
 
     private void Excel_Click(object sender, RoutedEventArgs e)

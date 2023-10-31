@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\CollegeProjects\\projects\\Nazarov\\ControlWork_Preview\\ControlWork_Preview\\ControlWork_Preview.csproj": {}
+    "E:\\CollegeProjects\\projects\\Nazarov\\ControlWork_Preview\\ControlWork_Preview\\ControlWork_Preview.csproj": {}
   },
   "projects": {
-    "F:\\CollegeProjects\\projects\\Nazarov\\ControlWork_Preview\\ControlWork_Preview\\ControlWork_Preview.csproj": {
+    "E:\\CollegeProjects\\projects\\Nazarov\\ControlWork_Preview\\ControlWork_Preview\\ControlWork_Preview.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\CollegeProjects\\projects\\Nazarov\\ControlWork_Preview\\ControlWork_Preview\\ControlWork_Preview.csproj",
+        "projectUniqueName": "E:\\CollegeProjects\\projects\\Nazarov\\ControlWork_Preview\\ControlWork_Preview\\ControlWork_Preview.csproj",
         "projectName": "ControlWork_Preview",
-        "projectPath": "F:\\CollegeProjects\\projects\\Nazarov\\ControlWork_Preview\\ControlWork_Preview\\ControlWork_Preview.csproj",
+        "projectPath": "E:\\CollegeProjects\\projects\\Nazarov\\ControlWork_Preview\\ControlWork_Preview\\ControlWork_Preview.csproj",
         "packagesPath": "C:\\Users\\Kayzel\\.nuget\\packages\\",
-        "outputPath": "F:\\CollegeProjects\\projects\\Nazarov\\ControlWork_Preview\\ControlWork_Preview\\obj\\",
+        "outputPath": "E:\\CollegeProjects\\projects\\Nazarov\\ControlWork_Preview\\ControlWork_Preview\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
