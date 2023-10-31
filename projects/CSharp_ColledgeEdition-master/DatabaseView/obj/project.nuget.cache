@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6fmXh8dQuPpUhdlouiD3Mt+U86+ITJ+NkAX7TGbX3wkyHkW5WMSnuOJdFUwXIAcoFeF5dAZpnqL1AGsE5fJHxg==",
+  "dgSpecHash": "V0dkxw/3XJvXhbTgyH6hk3jBl8H9un+fpF7M03q5BPG0mNGYR2uTjGxTn88cma8+CJBS0xUohy/6XQGQ16Kf9Q==",
   "success": true,
   "projectFilePath": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\DatabaseView\\DatabaseView.csproj",
   "expectedPackageFiles": [
@@ -29,10 +29,10 @@
     "C:\\Users\\Kayzel\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Kayzel\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\Kayzel\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.23\\microsoft.windowsdesktop.app.ref.6.0.23.nupkg.sha512",
-    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.23\\microsoft.netcore.app.ref.6.0.23.nupkg.sha512",
-    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.23\\microsoft.aspnetcore.app.ref.6.0.23.nupkg.sha512",
-    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.23\\microsoft.netcore.app.host.win-x64.6.0.23.nupkg.sha512"
+    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.24\\microsoft.netcore.app.ref.6.0.24.nupkg.sha512",
+    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.24\\microsoft.windowsdesktop.app.ref.6.0.24.nupkg.sha512",
+    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.24\\microsoft.aspnetcore.app.ref.6.0.24.nupkg.sha512",
+    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.24\\microsoft.netcore.app.host.win-x64.6.0.24.nupkg.sha512"
   ],
   "logs": []
 }
