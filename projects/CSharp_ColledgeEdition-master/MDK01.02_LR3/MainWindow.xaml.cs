@@ -19,6 +19,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.IO;
+using OfficeOpenXml.FormulaParsing.Excel.Functions.Finance.Implementations;
 
 namespace MDK01._02_LR3;
 
@@ -28,17 +29,19 @@ namespace MDK01._02_LR3;
 public partial class MainWindow : Window
 {
     private static string resourcePath = Environment.CurrentDirectory.Substring(0, Environment.CurrentDirectory.IndexOf(@"\bin"));
-    private Table tableWindow { get; set; } = new Table();
-    private List<GraphicResult> data { get; set; } = new List<GraphicResult>();
+    public Table tableWindow { get; set; } = new Table();
+    public List<GraphicResult> data { get; set; } = new List<GraphicResult>();
+    private Calculate Calculate = new Calculate();
     public MainWindow()
     {
         InitializeComponent();
         imageField.Source = new BitmapImage(new Uri(resourcePath + @"\formula.png", UriKind.Absolute));
         DataContext = this;
         Closing += MainWindow_Closing;
+        Calculate.mainWindow = this;
     }
 
-    private void MainWindow_Closing(object? sender, System.ComponentModel.CancelEventArgs e)
+    private void MainWindow_Closing(object? sender, CancelEventArgs e)
     {
         tableWindow.Close();
         Environment.Exit(0);
@@ -52,83 +55,27 @@ public partial class MainWindow : Window
 
     private void executeButton_Click(object sender, RoutedEventArgs e)
     {
-        Calculate();
-        if (data.Count != 0)
+        if (data.Count == 0)
         {
             tableWindow.dataGrid.ItemsSource = data;
-            tableWindow.dataGrid.Items.Refresh();
             tableWindow.Show();
+        }
+
+        Calculate.Execute();
+        if (data.Count != 0)
+        {
+            tableWindow.dataGrid.Items.Refresh();
         }
     }
 
-    private struct GraphicResult
+    public struct GraphicResult
     {
         public double value { get; private set; }
         public int x { get; private set; }
         public GraphicResult(double input, int i) => (this.value, this.x) = (Math.Round(input, 2), i);
     }
 
-    private bool Calculate()
-    {
-        if (int.TryParse(x1TextBox.Text, out var x1)) { }
-        else { Erase("x1 не целое число"); return false; }
-        if (int.TryParse(x2TextBox.Text, out var x2)) { }
-        else { Erase("x2 не целое число"); return false; }
-        if (int.TryParse(x2TextBox.Text, out var a)) { }
-        else { Erase("a не целое число"); return false; }
-        if (int.TryParse(x2TextBox.Text, out var b)) { }
-        else { Erase("b не целое число"); return false; }
-        if (int.TryParse(dxTextBox.Text, out var dx)) { }
-        else { Erase("dx не целое число"); return false; }
-
-
-        if (x1 == 0 || x2 == 0 || (x1 > x2) || (x1 == x2))
-        {
-            Erase("x1 и x2 не диапазонон с длиной > 0");
-            return false;
-        }
-
-        //if (x1 <= 0 && x2 >= 0)
-        //{
-        //    Erase("Диапазон не должен включать 0");
-        //    return false;
-        //}
-
-        if (b == 0)
-        {
-            Erase("b = 0");
-            return false;
-        }
-
-        if (dx < 0)
-        {
-            Erase("dx должно быть >= 0");
-            return false;
-        }
-
-        if (dx >= x2 - x1)
-        {
-            Erase("dx больше отрезка");
-            return false;
-        }
-
-        data = new List<GraphicResult>();
-        for (int i = x1; i <= x2; i += dx == 0 ? dx : 1)
-        {
-            if (i != 0)
-            {
-                data.Add(new GraphicResult(
-                    Math.Abs(Math.Pow(2 * a - 7.5 * i, 3)) + Math.Pow(Math.E, ((2 * b) / i) - a / (2 * b))
-                , i));
-            }
-            else
-            {
-                data.Add(new GraphicResult(0, i));
-            }
-        }
-        return true;
-    }
-
+    
     private void aboutButton_Click(object sender, RoutedEventArgs e)
     {
         MessageBox.Show("Это программа для вычисления заданной формулы.");
@@ -161,7 +108,7 @@ public partial class MainWindow : Window
         using var Excel = new ExcelPackage(resourcePath + @"\Excel.xlsx");
         this.Dispatcher.Invoke(() =>
         {
-            if (!Calculate())
+            if (!Calculate.Execute())
             {
                 MessageBox.Show("Неверные данные", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
