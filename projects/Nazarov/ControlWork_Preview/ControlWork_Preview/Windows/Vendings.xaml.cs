@@ -51,10 +51,10 @@ public partial class Vendings : Window
             editMachine.Owner = this;
 
             editMachine.Id.Text = "Не будет обновлён";
-            editMachine.Model.Text = currentMachine.Model;
-            editMachine.Year.Text = currentMachine.Year;
-            editMachine.Color.Text = currentMachine.Color;
-            editMachine.CountryPerformer.Text = currentMachine.CountryPerformer;
+            editMachine.Model.Text = currentMachine?.Model;
+            editMachine.Year.Text = currentMachine?.Year;
+            editMachine.Color.Text = currentMachine?.Color;
+            editMachine.CountryPerformer.Text = currentMachine?.CountryPerformer;
 
             editMachine.ShowDialog();
             currentMachine.Model = editMachine.Model.Text;
@@ -91,6 +91,8 @@ public partial class Vendings : Window
         newMachine.Owner = this;
         newMachine.ShowDialog();
 
+        if (!int.TryParse(newMachine.Id.Text, out _))
+            return;
         var machine = new Vending(
                     int.Parse(newMachine.Id.Text), newMachine.Model.Text, newMachine.Year.Text, newMachine.Color.Text, newMachine.CountryPerformer.Text
         );
@@ -98,9 +100,6 @@ public partial class Vendings : Window
         Machines.Add(machine);
         dbContext.Vendings.Add(machine);
         dbContext.SaveChanges();
-        MessageBox.Show(Machines.Count.ToString(), "Machines");
-        MessageBox.Show(dbContext.Vendings.Count().ToString(), "DB");
-
     }
 
     private void Excel_Click(object sender, RoutedEventArgs e)
@@ -114,14 +113,9 @@ public partial class Vendings : Window
         using var Excel = new ExcelPackage(resourcePath + @"\Excel.xlsx");
         this.Dispatcher.Invoke(() =>
         {
-            var worksheet = Excel.Workbook.Worksheets.Where(x => x.Name == "Machines").FirstOrDefault();
-            if (worksheet == null)
-            {
-                Excel.Workbook.Worksheets.Add("Machines");
-                worksheet = Excel.Workbook.Worksheets.Where(x => x.Name == "Machines").FirstOrDefault();
-            }
-
-            worksheet?.Cells.Clear();
+            var worksheet = Excel.Workbook.Worksheets.Where(x => x.Name == "Machines").FirstOrDefault() 
+                            ?? Excel.Workbook.Worksheets.Add("Machines");
+            worksheet.Cells.Clear();
 
             worksheet.Cells[$"A1"].Value = "ID";
             worksheet.Cells[$"B1"].Value = "Марка";

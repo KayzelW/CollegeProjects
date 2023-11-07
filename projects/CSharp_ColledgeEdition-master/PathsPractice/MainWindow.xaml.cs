@@ -45,7 +45,6 @@ namespace PathsPractice
 
                 for (int i = 0; i < excelRange.Count; i+=2)
                 {
-                    
                     points.Add(new Point(excelRange[i], excelRange[i+1]));
                     //test += $" {excelRange[i]} {excelRange[i+1]}\n";
                 }

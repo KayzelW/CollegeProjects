@@ -16,6 +16,9 @@ using System.Windows.Shapes;
 using OfficeOpenXml.Drawing.Chart;
 using OfficeOpenXml;
 using System.Threading;
+using LiveCharts;
+using LiveCharts.Wpf;
+using System.Diagnostics;
 
 namespace ControlWork_Preview.Windows;
 /*
@@ -35,7 +38,7 @@ namespace ControlWork_Preview.Windows;
 /// </summary>
 public partial class Shop : Window
 {
-    private string resourcePath;
+    private string? resourcePath;
     private List<Good> goods = new List<Good>();
     public AppDbContext dbContext;
 
@@ -43,6 +46,7 @@ public partial class Shop : Window
     {
         InitializeComponent();
         Closing += Shop_Closing;
+        DataContext = this;
     }
 
     private void Shop_Closing(object? sender, System.ComponentModel.CancelEventArgs e)
@@ -84,14 +88,9 @@ public partial class Shop : Window
         ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
         using var Excel = new ExcelPackage(resourcePath + @"\Excel.xlsx");
 
-        var worksheet = Excel.Workbook.Worksheets.Where(x => x.Name == "Shop").FirstOrDefault();
-        if (worksheet == null)
-        {
-            Excel.Workbook.Worksheets.Add("Shop");
-            worksheet = Excel.Workbook.Worksheets.Where(x => x.Name == "Shop").FirstOrDefault();
-        }
-
-        worksheet!.Cells.Clear();
+        var worksheet = Excel.Workbook.Worksheets.Where(x => x.Name == "Shop").FirstOrDefault() 
+                        ?? Excel.Workbook.Worksheets.Add("Shop");
+        worksheet.Cells.Clear();
         worksheet.Drawings.Clear();
 
         worksheet.Cells[$"A1"].Value = "Название";
@@ -120,10 +119,56 @@ public partial class Shop : Window
         chart.SetSize(400, 400);
 
         await Excel.SaveAsAsync(Excel.File);
+        MessageBox.Show("Done", "Статус выгрузки в Excel", MessageBoxButton.OK, MessageBoxImage.Information);
+        try
+        {
+            var process = new Process();
+            process.StartInfo.FileName = Excel.File.FullName;
+            process.Start();
+        } catch (Exception ex)
+        {
+            MessageBox.Show(ex.ToString(), "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
     }
 
     private void DB_UploadBtn_Click(object sender, RoutedEventArgs e)
     {
         dbContext.Goods.AttachRange(goods);
+    }
+
+    private void Chart_Click(object sender, RoutedEventArgs e)
+    {
+        DrawHistogram();
+    }
+
+    private void DrawHistogram()
+    {
+        chartsComponent.Series.Clear();
+        chartsComponent.AxisX.Clear();
+        chartsComponent.AxisY.Clear();
+
+        // Создание экземпляра SeriesCollection
+        var seriesCollection = new SeriesCollection
+        {
+            new ColumnSeries
+            {
+                Title = "Цена:",
+                Values = new ChartValues<double> (goods.Select(x => (double)x.Price)),
+            }
+        };
+
+        // Настройка оси X и Y
+        chartsComponent.AxisX.Add(new Axis
+        {
+            Labels = goods.Select(x => x.Name).ToArray()
+        });
+
+        chartsComponent.AxisY.Add(new Axis
+        {
+            Title = "Цены"
+        });
+
+        // Установка созданной SeriesCollection в элемент управления
+        chartsComponent.Series = seriesCollection;
     }
 }

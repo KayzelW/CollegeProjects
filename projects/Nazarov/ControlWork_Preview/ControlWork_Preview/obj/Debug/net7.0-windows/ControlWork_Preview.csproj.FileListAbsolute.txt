@@ -160,3 +160,6 @@ E:\CollegeProjects\projects\Nazarov\ControlWork_Preview\ControlWork_Preview\obj\
 E:\CollegeProjects\projects\Nazarov\ControlWork_Preview\ControlWork_Preview\obj\Debug\net7.0-windows\Windows\AddMachine.baml
 E:\CollegeProjects\projects\Nazarov\ControlWork_Preview\ControlWork_Preview\obj\Debug\net7.0-windows\Windows\Shop.baml
 E:\CollegeProjects\projects\Nazarov\ControlWork_Preview\ControlWork_Preview\obj\Debug\net7.0-windows\Windows\Vendings.baml
+E:\CollegeProjects\projects\Nazarov\ControlWork_Preview\ControlWork_Preview\bin\Debug\net7.0-windows\LiveCharts.dll
+E:\CollegeProjects\projects\Nazarov\ControlWork_Preview\ControlWork_Preview\bin\Debug\net7.0-windows\LiveCharts.Wpf.dll
+E:\CollegeProjects\projects\Nazarov\ControlWork_Preview\ControlWork_Preview\bin\Debug\net7.0-windows\LiveChartsCore.dll

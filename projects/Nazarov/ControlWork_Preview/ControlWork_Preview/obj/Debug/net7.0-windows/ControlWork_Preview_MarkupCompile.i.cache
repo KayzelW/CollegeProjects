@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\CollegeProjects\projects\Nazarov\ControlWork_Preview\ControlWork_Preview\obj\Debug\net7.0-windows\
+E:\CollegeProjects\projects\Nazarov\ControlWork_Preview\ControlWork_Preview\obj\Debug\net7.0-windows\
 ControlWork_Preview
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-D:\CollegeProjects\projects\Nazarov\ControlWork_Preview\ControlWork_Preview\App.xaml
+E:\CollegeProjects\projects\Nazarov\ControlWork_Preview\ControlWork_Preview\App.xaml
 4-347899975
 
 11-1588573000
-227-1276775151
+230-413125731
 MainWindow.xaml;Windows\AddMachine.xaml;Windows\Shop.xaml;Windows\Vendings.xaml;
 
-True
+False
 

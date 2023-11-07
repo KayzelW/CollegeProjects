@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RnvHFj+XmUilSNNstEzMnlY/4m2xc9J6/1GChYWauo+plli5xxmKLlc9UbkrOHW/pTxORBdv1MbNRjp9HgPN+g==",
+  "dgSpecHash": "AmnxZo5V31Rca1mD0vu1oM3DAUZM1wM8MpPo61xKB8yGo8+IifAEX0IvMTJSzBXcMjRhMumUI634AtH5d59hRw==",
   "success": true,
-  "projectFilePath": "F:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\Trade\\Trade.csproj",
+  "projectFilePath": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\Trade\\Trade.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.12\\microsoft.data.sqlite.core.7.0.12.nupkg.sha512",
     "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.12\\microsoft.entityframeworkcore.7.0.12.nupkg.sha512",

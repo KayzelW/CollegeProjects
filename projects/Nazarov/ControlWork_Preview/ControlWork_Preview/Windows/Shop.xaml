@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ControlWork_Preview.Windows"
+        xmlns:LiveCharts="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         mc:Ignorable="d"
         Title="Shop" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <DockPanel>
@@ -12,7 +13,7 @@
             <MenuItem Header="База данных">
                 <MenuItem Header="Выгрузить" Name="DB_UploadBtn" Click="DB_UploadBtn_Click"/>
             </MenuItem>
-            <MenuItem Header="Сортировка"/>
+            <MenuItem Header="Chart" Name="Chart" Click="Chart_Click"/>
         </Menu>
         <StackPanel Orientation="Vertical">
             <Label x:Name="label" Height="40"/>
@@ -20,5 +21,6 @@
                 <DataGrid x:Name="dataGrid"/>
             </ListView>
         </StackPanel>
+        <LiveCharts:CartesianChart x:Name="chartsComponent" Margin="10"/>
     </DockPanel>
 </Window>
