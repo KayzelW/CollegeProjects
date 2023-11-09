@@ -46,6 +46,7 @@ public partial class Shop : Window
     {
         InitializeComponent();
         Closing += Shop_Closing;
+        
         DataContext = this;
     }
 
@@ -85,7 +86,6 @@ public partial class Shop : Window
 
     private async void ExcelUpload(object? _)
     {
-        ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
         using var Excel = new ExcelPackage(resourcePath + @"\Excel.xlsx");
 
         var worksheet = Excel.Workbook.Worksheets.Where(x => x.Name == "Shop").FirstOrDefault() 
@@ -104,7 +104,8 @@ public partial class Shop : Window
             worksheet.Cells[$"B{row}"].Value = item.Category;
             worksheet.Cells[$"C{row}"].Value = item.Price;
         }
-        
+
+        #region Charts
         var chart = worksheet.Drawings.AddChart("Гистограмма", eChartType.ColumnClustered);
         chart.Series.Add(
             worksheet.Cells[$"C2:C{row}"], //Ось X
@@ -117,18 +118,10 @@ public partial class Shop : Window
 
         chart.SetPosition(5, 200);
         chart.SetSize(400, 400);
-
+        #endregion
+        
         await Excel.SaveAsAsync(Excel.File);
         MessageBox.Show("Done", "Статус выгрузки в Excel", MessageBoxButton.OK, MessageBoxImage.Information);
-        try
-        {
-            var process = new Process();
-            process.StartInfo.FileName = Excel.File.FullName;
-            process.Start();
-        } catch (Exception ex)
-        {
-            MessageBox.Show(ex.ToString(), "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-        }
     }
 
     private void DB_UploadBtn_Click(object sender, RoutedEventArgs e)
@@ -157,12 +150,13 @@ public partial class Shop : Window
             }
         };
 
-        // Настройка оси X и Y
+        // Настройка осей
+        // X
         chartsComponent.AxisX.Add(new Axis
         {
             Labels = goods.Select(x => x.Name).ToArray()
         });
-
+        // Y
         chartsComponent.AxisY.Add(new Axis
         {
             Title = "Цены"

@@ -1,0 +1,26 @@
+﻿<Window x:Class="ControlWork.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ControlWork"
+        mc:Ignorable="d"
+        Title="Окно авторизации" Height="220" Width="400"
+        x:Name="AuthWindow" WindowStartupLocation="CenterScreen">
+    <DockPanel>
+        <Grid>
+            <StackPanel Orientation="Vertical" Width="150" VerticalAlignment="Center">
+                <TextBlock Text="Авторизация" FontSize="20" TextAlignment="Center"/>
+                <StackPanel>
+                    <Label Content="Логин"/>
+                    <TextBox x:Name="loginText"/>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Пароль"/>
+                    <PasswordBox x:Name="passwordText" />
+                </StackPanel>
+                <Button Content="Login in" Click="Button_Click" Margin="0 10 0 0"/>
+            </StackPanel>
+        </Grid>
+    </DockPanel>
+</Window>

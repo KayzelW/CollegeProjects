@@ -1,6 +1,7 @@
 ﻿using ControlWork_Preview.Classes;
 using ControlWork_Preview.Windows;
 using Microsoft.EntityFrameworkCore;
+using OfficeOpenXml;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,6 +44,18 @@ public partial class MainWindow : Window
         //check.Start();
         Closing += MainWindow_Closing;
         this.Loaded += MainWindow_Loaded;
+
+        passwordText.KeyDown += Text_KeyDown;
+        loginText.KeyDown += Text_KeyDown;
+        ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+    }
+
+    private void Text_KeyDown(object sender, KeyEventArgs e)
+    {
+        if (e.Key == Key.Enter)
+        {
+            auth();
+        }
     }
 
     private void MainWindow_Loaded(object sender, RoutedEventArgs e)
@@ -66,10 +79,15 @@ public partial class MainWindow : Window
             ); // Использовать эту строку подключения
 
         dbContext = new AppDbContext(optionsBuilder.Options); // создание объекта БД
-        dbContext.Database.EnsureCreated(); // Файл точно есть?
+        dbContext.Database.EnsureCreated(); // БД точно есть?
     }
 
     private void Button_Click(object sender, RoutedEventArgs e)
+    {
+        auth();
+    }
+
+    private void auth()
     {
         var login = loginText.Text.Trim();
         var password = passwordText.Password.Trim();
@@ -78,14 +96,14 @@ public partial class MainWindow : Window
             case ("root", "root"):
                 Shop ??= new Shop(resourcePath, ref dbContext);
                 Shop.Owner = this;
-                this.Shop.Show();
+                Shop.Show();
                 this.Hide();
                 ClearText();
                 break;
             case ("user", "user"):
                 Vendings ??= new Vendings(resourcePath, ref dbContext);
                 Vendings.Owner = this;
-                this.Vendings.Show();
+                Vendings.Show();
                 this.Hide();
                 ClearText();
                 break;

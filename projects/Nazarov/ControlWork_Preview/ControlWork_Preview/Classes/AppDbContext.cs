@@ -12,7 +12,6 @@ public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions options) : base(options) { }
     protected AppDbContext() { }
-
     public DbSet<Good> Goods { get; set; }
     public DbSet<Vending> Vendings { get; set; }
 

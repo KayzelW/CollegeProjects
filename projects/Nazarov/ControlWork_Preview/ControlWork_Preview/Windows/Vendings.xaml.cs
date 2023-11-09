@@ -109,8 +109,7 @@ public partial class Vendings : Window
 
     private async void ExcelUpload(object? _)
     {
-        ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
-        using var Excel = new ExcelPackage(resourcePath + @"\Excel.xlsx");
+        var Excel = new ExcelPackage(resourcePath + @"\Excel.xlsx");
         this.Dispatcher.Invoke(() =>
         {
             var worksheet = Excel.Workbook.Worksheets.Where(x => x.Name == "Machines").FirstOrDefault() 
