@@ -1,0 +1,14 @@
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Matrix18\bin\Debug\net7.0\Matrix18.exe
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Matrix18\bin\Debug\net7.0\Matrix18.deps.json
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Matrix18\bin\Debug\net7.0\Matrix18.runtimeconfig.json
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Matrix18\bin\Debug\net7.0\Matrix18.dll
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Matrix18\bin\Debug\net7.0\Matrix18.pdb
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Matrix18\obj\Debug\net7.0\Matrix18.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Matrix18\obj\Debug\net7.0\Matrix18.AssemblyInfoInputs.cache
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Matrix18\obj\Debug\net7.0\Matrix18.AssemblyInfo.cs
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Matrix18\obj\Debug\net7.0\Matrix18.csproj.CoreCompileInputs.cache
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Matrix18\obj\Debug\net7.0\Matrix18.dll
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Matrix18\obj\Debug\net7.0\refint\Matrix18.dll
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Matrix18\obj\Debug\net7.0\Matrix18.pdb
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Matrix18\obj\Debug\net7.0\Matrix18.genruntimeconfig.cache
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Matrix18\obj\Debug\net7.0\ref\Matrix18.dll

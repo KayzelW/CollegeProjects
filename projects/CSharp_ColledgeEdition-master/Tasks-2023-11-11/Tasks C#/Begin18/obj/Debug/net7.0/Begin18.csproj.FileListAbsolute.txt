@@ -1,0 +1,14 @@
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Begin18\bin\Debug\net7.0\Begin18.exe
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Begin18\bin\Debug\net7.0\Begin18.deps.json
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Begin18\bin\Debug\net7.0\Begin18.runtimeconfig.json
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Begin18\bin\Debug\net7.0\Begin18.dll
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Begin18\bin\Debug\net7.0\Begin18.pdb
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Begin18\obj\Debug\net7.0\Begin18.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Begin18\obj\Debug\net7.0\Begin18.AssemblyInfoInputs.cache
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Begin18\obj\Debug\net7.0\Begin18.AssemblyInfo.cs
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Begin18\obj\Debug\net7.0\Begin18.csproj.CoreCompileInputs.cache
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Begin18\obj\Debug\net7.0\Begin18.dll
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Begin18\obj\Debug\net7.0\refint\Begin18.dll
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Begin18\obj\Debug\net7.0\Begin18.pdb
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Begin18\obj\Debug\net7.0\Begin18.genruntimeconfig.cache
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Begin18\obj\Debug\net7.0\ref\Begin18.dll

@@ -1,0 +1,14 @@
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Dynamic18\bin\Debug\net7.0\Dynamic18.exe
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Dynamic18\bin\Debug\net7.0\Dynamic18.deps.json
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Dynamic18\bin\Debug\net7.0\Dynamic18.runtimeconfig.json
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Dynamic18\bin\Debug\net7.0\Dynamic18.dll
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Dynamic18\bin\Debug\net7.0\Dynamic18.pdb
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Dynamic18\obj\Debug\net7.0\Dynamic18.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Dynamic18\obj\Debug\net7.0\Dynamic18.AssemblyInfoInputs.cache
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Dynamic18\obj\Debug\net7.0\Dynamic18.AssemblyInfo.cs
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Dynamic18\obj\Debug\net7.0\Dynamic18.csproj.CoreCompileInputs.cache
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Dynamic18\obj\Debug\net7.0\Dynamic18.dll
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Dynamic18\obj\Debug\net7.0\refint\Dynamic18.dll
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Dynamic18\obj\Debug\net7.0\Dynamic18.pdb
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Dynamic18\obj\Debug\net7.0\Dynamic18.genruntimeconfig.cache
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Dynamic18\obj\Debug\net7.0\ref\Dynamic18.dll

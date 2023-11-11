@@ -1,0 +1,14 @@
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Integer18\bin\Debug\net7.0\Integer18.exe
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Integer18\bin\Debug\net7.0\Integer18.deps.json
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Integer18\bin\Debug\net7.0\Integer18.runtimeconfig.json
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Integer18\bin\Debug\net7.0\Integer18.dll
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Integer18\bin\Debug\net7.0\Integer18.pdb
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Integer18\obj\Debug\net7.0\Integer18.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Integer18\obj\Debug\net7.0\Integer18.AssemblyInfoInputs.cache
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Integer18\obj\Debug\net7.0\Integer18.AssemblyInfo.cs
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Integer18\obj\Debug\net7.0\Integer18.csproj.CoreCompileInputs.cache
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Integer18\obj\Debug\net7.0\Integer18.dll
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Integer18\obj\Debug\net7.0\refint\Integer18.dll
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Integer18\obj\Debug\net7.0\Integer18.pdb
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Integer18\obj\Debug\net7.0\Integer18.genruntimeconfig.cache
+C:\Projects\CSharpProjects\CSharp_ColledgeEdition\Tasks-2023-11-11\Tasks C#\Integer18\obj\Debug\net7.0\ref\Integer18.dll
