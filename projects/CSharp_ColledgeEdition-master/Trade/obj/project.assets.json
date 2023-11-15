@@ -1195,11 +1195,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\Trade\\Trade.csproj",
+      "projectUniqueName": "F:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\Trade\\Trade.csproj",
       "projectName": "Trade",
-      "projectPath": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\Trade\\Trade.csproj",
+      "projectPath": "F:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\Trade\\Trade.csproj",
       "packagesPath": "C:\\Users\\Kayzel\\.nuget\\packages\\",
-      "outputPath": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\Trade\\obj\\",
+      "outputPath": "F:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\Trade\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

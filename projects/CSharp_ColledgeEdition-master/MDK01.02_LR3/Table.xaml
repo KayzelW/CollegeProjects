@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Table" Height="auto" Width="230" ResizeMode="NoResize">
     <Grid>
-        <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" x:FieldModifier="public">
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" x:FieldModifier="public" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="X" Binding="{Binding x}" Width="30"/>
                 <DataGridTextColumn Header="Вычисленное значение" Binding="{Binding value}" Width="200"/>

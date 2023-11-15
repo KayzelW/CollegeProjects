@@ -397,6 +397,19 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+<<<<<<< Updated upstream
+=======
+      },
+      "Classes/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Classes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Classes.dll": {}
+        }
+>>>>>>> Stashed changes
       }
     }
   },
@@ -1024,15 +1037,31 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+<<<<<<< Updated upstream
+=======
+    },
+    "Classes/1.0.0": {
+      "type": "project",
+      "path": "../Classes/Classes.csproj",
+      "msbuildProject": "../Classes/Classes.csproj"
+>>>>>>> Stashed changes
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+<<<<<<< Updated upstream
+=======
+      "Classes >= 1.0.0",
+>>>>>>> Stashed changes
       "EPPlus >= 7.0.0"
     ]
   },
   "packageFolders": {
+<<<<<<< Updated upstream
     "C:\\Users\\student\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\Student\\.nuget\\packages\\": {},
+>>>>>>> Stashed changes
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
@@ -1040,15 +1069,25 @@
     "restore": {
       "projectUniqueName": "D:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\MDK01.02_LR3\\MDK01.02_LR3.csproj",
       "projectName": "MDK01.02_LR3",
+<<<<<<< Updated upstream
       "projectPath": "D:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\MDK01.02_LR3\\MDK01.02_LR3.csproj",
       "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
       "outputPath": "D:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\MDK01.02_LR3\\obj\\",
+=======
+      "projectPath": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\MDK01.02_LR3\\MDK01.02_LR3.csproj",
+      "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
+      "outputPath": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\MDK01.02_LR3\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< Updated upstream
         "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Stashed changes
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1062,7 +1101,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\Classes\\Classes.csproj": {
+              "projectPath": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\Classes\\Classes.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

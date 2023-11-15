@@ -20,6 +20,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.IO;
 using OfficeOpenXml.FormulaParsing.Excel.Functions.Finance.Implementations;
+<<<<<<< Updated upstream
+=======
+using Classes;
+>>>>>>> Stashed changes
 
 namespace MDK01._02_LR3;
 
@@ -30,7 +34,11 @@ public partial class MainWindow : Window
 {
     private static string resourcePath = Environment.CurrentDirectory.Substring(0, Environment.CurrentDirectory.IndexOf(@"\bin"));
     public Table tableWindow { get; set; } = new Table();
+<<<<<<< Updated upstream
     public List<GraphicResult> data { get; set; } = new List<GraphicResult>();
+=======
+    public List<Calculate.GraphicResult> data = new List<Calculate.GraphicResult>();
+>>>>>>> Stashed changes
     private Calculate Calculate = new Calculate();
     public MainWindow()
     {
@@ -38,7 +46,12 @@ public partial class MainWindow : Window
         imageField.Source = new BitmapImage(new Uri(resourcePath + @"\formula.png", UriKind.Absolute));
         DataContext = this;
         Closing += MainWindow_Closing;
+<<<<<<< Updated upstream
         Calculate.mainWindow = this;
+=======
+
+        //tableWindow.dataGrid.IsEnabled= false;
+>>>>>>> Stashed changes
     }
 
     private void MainWindow_Closing(object? sender, CancelEventArgs e)
@@ -55,17 +68,29 @@ public partial class MainWindow : Window
 
     private void executeButton_Click(object sender, RoutedEventArgs e)
     {
+<<<<<<< Updated upstream
+=======
+        if (CheckData() == true)
+        {
+            data = Calculate.Execute(x1TextBox.Text, x2TextBox.Text, aTextBox.Text, bTextBox.Text, dxTextBox.Text);
+        }
+
+>>>>>>> Stashed changes
         if (data.Count == 0)
         {
             tableWindow.dataGrid.ItemsSource = data;
             tableWindow.Show();
         }
 
+<<<<<<< Updated upstream
         Calculate.Execute();
+=======
+>>>>>>> Stashed changes
         if (data.Count != 0)
         {
             tableWindow.dataGrid.Items.Refresh();
         }
+<<<<<<< Updated upstream
     }
 
     public struct GraphicResult
@@ -75,6 +100,56 @@ public partial class MainWindow : Window
         public GraphicResult(double input, int i) => (this.value, this.x) = (Math.Round(input, 2), i);
     }
 
+=======
+    }
+
+    private bool CheckData()
+    {
+        if (int.TryParse(x1TextBox.Text, out var x1)) { }
+        else { Erase("x1 не целое число"); return false; }
+        if (int.TryParse(x2TextBox.Text, out var x2)) { }
+        else { Erase("x2 не целое число"); return false; }
+        if (int.TryParse(aTextBox.Text, out var a)) { }
+        else { Erase("a не целое число"); return false; }
+        if (int.TryParse(bTextBox.Text, out var b)) { }
+        else { Erase("b не целое число"); return false; }
+        if (int.TryParse(dxTextBox.Text, out var dx)) { }
+        else { Erase("dx не целое число"); return false; }
+
+
+        if (x1 == 0 || x2 == 0 || (x1 > x2) || (x1 == x2))
+        {
+            Erase("x1 и x2 не диапазонон с длиной > 0");
+            return false;
+        }
+
+        //if (x1 <= 0 && x2 >= 0)
+        //{
+        //    Erase("Диапазон не должен включать 0");
+        //    return false;
+        //}
+
+        if (b == 0)
+        {
+            Erase("b = 0");
+            return false;
+        }
+
+        if (dx <= 0)
+        {
+            Erase("dx должно быть > 0");
+            return false;
+        }
+
+        if (dx >= x2 - x1)
+        {
+            Erase("dx больше отрезка");
+            return false;
+        }
+
+        return true;
+    }
+>>>>>>> Stashed changes
     
     private void aboutButton_Click(object sender, RoutedEventArgs e)
     {
@@ -108,11 +183,22 @@ public partial class MainWindow : Window
         using var Excel = new ExcelPackage(resourcePath + @"\Excel.xlsx");
         this.Dispatcher.Invoke(() =>
         {
+<<<<<<< Updated upstream
             if (!Calculate.Execute())
+=======
+            if (!CheckData())
+>>>>>>> Stashed changes
             {
                 MessageBox.Show("Неверные данные", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
+<<<<<<< Updated upstream
+=======
+            else
+            {
+                this.data = Calculate.Execute(x1TextBox.Text, x2TextBox.Text, aTextBox.Text, bTextBox.Text, dxTextBox.Text);
+            }
+>>>>>>> Stashed changes
 
             var worksheet = Excel.Workbook.Worksheets.FirstOrDefault();
 

@@ -96,3 +96,24 @@ D:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\obj\Debug
 D:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\obj\Debug\net6.0-windows\MDK01.02_LR3.pdb
 D:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\obj\Debug\net6.0-windows\MDK01.02_LR3.genruntimeconfig.cache
 D:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\obj\Debug\net6.0-windows\ref\MDK01.02_LR3.dll
+<<<<<<< Updated upstream
+=======
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\bin\Debug\net6.0-windows\EPPlus.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\bin\Debug\net6.0-windows\EPPlus.Interfaces.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\bin\Debug\net6.0-windows\EPPlus.System.Drawing.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Json.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\bin\Debug\net6.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\bin\Debug\net6.0-windows\Microsoft.IO.RecyclableMemoryStream.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\bin\Debug\net6.0-windows\System.Security.Cryptography.Pkcs.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\obj\Debug\net6.0-windows\MDK01.02_LR3.csproj.AssemblyReference.cache
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\obj\Debug\net6.0-windows\MDK01.02_LR3.csproj.CopyComplete
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\bin\Debug\net6.0-windows\Classes.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\MDK01.02_LR3\bin\Debug\net6.0-windows\Classes.pdb
+>>>>>>> Stashed changes
