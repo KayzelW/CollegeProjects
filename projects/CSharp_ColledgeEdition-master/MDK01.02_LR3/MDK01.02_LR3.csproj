@@ -12,7 +12,6 @@
     <PackageReference Include="EPPlus" Version="7.0.0" />
   </ItemGroup>
 
-
   <ItemGroup>
     <ProjectReference Include="..\Classes\Classes.csproj" />
   </ItemGroup>

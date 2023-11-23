@@ -100,3 +100,4 @@ E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\CalculateTest\obj\Debu
 E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\CalculateTest\obj\Debug\net6.0\CalculateTest.pdb
 E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\CalculateTest\obj\Debug\net6.0\CalculateTest.genruntimeconfig.cache
 E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\CalculateTest\obj\Debug\net6.0\ref\CalculateTest.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\CalculateTest\obj\Debug\net6.0\CalculateTest.sourcelink.json
