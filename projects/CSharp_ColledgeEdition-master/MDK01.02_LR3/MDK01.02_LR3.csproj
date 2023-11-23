@@ -12,11 +12,9 @@
     <PackageReference Include="EPPlus" Version="7.0.0" />
   </ItemGroup>
 
-<<<<<<< Updated upstream
-=======
+
   <ItemGroup>
     <ProjectReference Include="..\Classes\Classes.csproj" />
   </ItemGroup>
 
->>>>>>> Stashed changes
 </Project>

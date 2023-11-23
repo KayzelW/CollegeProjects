@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lKiiTgcqp2zDjzUh6T5UmSlK6lFni1hTs4o3PViLqR6qH8ROkClFrawrbLmjkVqfU/PS148fbKMdA6NtPxutJA==",
+  "dgSpecHash": "PZ8l7mAoALsep/sAMC6Gc/Q7SL4dSyBmdLcShuUWj7Oa15YrxbkUa8WZmNv4PavPo+ATTxUL0vGn8Evjw7Q3Mg==",
   "success": true,
-  "projectFilePath": "F:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\DatabaseView\\DatabaseView.csproj",
+  "projectFilePath": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\DatabaseView\\DatabaseView.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.11\\microsoft.data.sqlite.core.7.0.11.nupkg.sha512",
     "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
@@ -28,11 +28,7 @@
     "C:\\Users\\Kayzel\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Kayzel\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Kayzel\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\Kayzel\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.24\\microsoft.netcore.app.ref.6.0.24.nupkg.sha512",
-    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.24\\microsoft.windowsdesktop.app.ref.6.0.24.nupkg.sha512",
-    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.24\\microsoft.aspnetcore.app.ref.6.0.24.nupkg.sha512",
-    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.24\\microsoft.netcore.app.host.win-x64.6.0.24.nupkg.sha512"
+    "C:\\Users\\Kayzel\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

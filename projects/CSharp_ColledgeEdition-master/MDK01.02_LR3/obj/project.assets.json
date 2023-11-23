@@ -397,8 +397,6 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
-<<<<<<< Updated upstream
-=======
       },
       "Classes/1.0.0": {
         "type": "project",
@@ -409,7 +407,6 @@
         "runtime": {
           "bin/placeholder/Classes.dll": {}
         }
->>>>>>> Stashed changes
       }
     }
   },
@@ -1037,57 +1034,37 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
-<<<<<<< Updated upstream
-=======
     },
     "Classes/1.0.0": {
       "type": "project",
       "path": "../Classes/Classes.csproj",
       "msbuildProject": "../Classes/Classes.csproj"
->>>>>>> Stashed changes
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-<<<<<<< Updated upstream
-=======
       "Classes >= 1.0.0",
->>>>>>> Stashed changes
       "EPPlus >= 7.0.0"
     ]
   },
   "packageFolders": {
-<<<<<<< Updated upstream
-    "C:\\Users\\student\\.nuget\\packages\\": {},
-=======
-    "C:\\Users\\Student\\.nuget\\packages\\": {},
->>>>>>> Stashed changes
+    "C:\\Users\\Kayzel\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\MDK01.02_LR3\\MDK01.02_LR3.csproj",
+      "projectUniqueName": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\MDK01.02_LR3\\MDK01.02_LR3.csproj",
       "projectName": "MDK01.02_LR3",
-<<<<<<< Updated upstream
-      "projectPath": "D:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\MDK01.02_LR3\\MDK01.02_LR3.csproj",
-      "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-      "outputPath": "D:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\MDK01.02_LR3\\obj\\",
-=======
       "projectPath": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\MDK01.02_LR3\\MDK01.02_LR3.csproj",
-      "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Kayzel\\.nuget\\packages\\",
       "outputPath": "E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\MDK01.02_LR3\\obj\\",
->>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< Updated upstream
-        "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> Stashed changes
+        "C:\\Users\\Kayzel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1096,6 +1073,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1142,8 +1120,16 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Ошибка чтения файла кэша E:\\CollegeProjects\\projects\\CSharp_ColledgeEdition-master\\MDK01.02_LR3\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

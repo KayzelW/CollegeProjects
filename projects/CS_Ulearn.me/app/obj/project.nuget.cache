@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+xlqRTAbbgd1fcX0Okn1jgXldCiXm9wpDJBTmZOkA4zafx66pNGz0AiQy8D7u8NHJuVdWPwzaVdDq3KYv1cANQ==",
+  "dgSpecHash": "oGlQKXcyw0PadeLf5bYbO/YUf8xtJKvl6CApj7YE5PdaD3dIyZqbtWTr0smZYnw+Gelv0x3ITHNlLsh5vO7Pcw==",
   "success": true,
   "projectFilePath": "E:\\CollegeProjects\\projects\\CS_Ulearn.me\\app\\app.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.24\\microsoft.netcore.app.ref.6.0.24.nupkg.sha512",
-    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.24\\microsoft.windowsdesktop.app.ref.6.0.24.nupkg.sha512",
-    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.24\\microsoft.aspnetcore.app.ref.6.0.24.nupkg.sha512",
-    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.24\\microsoft.netcore.app.host.win-x64.6.0.24.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,7 +1,6 @@
 E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Classes\bin\Debug\net6.0\Classes.deps.json
 E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Classes\bin\Debug\net6.0\Classes.dll
 E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Classes\bin\Debug\net6.0\Classes.pdb
-E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Classes\obj\Debug\net6.0\Classes.csproj.AssemblyReference.cache
 E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Classes\obj\Debug\net6.0\Classes.GeneratedMSBuildEditorConfig.editorconfig
 E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Classes\obj\Debug\net6.0\Classes.AssemblyInfoInputs.cache
 E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Classes\obj\Debug\net6.0\Classes.AssemblyInfo.cs
@@ -10,3 +9,4 @@ E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Classes\obj\Debug\net6
 E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Classes\obj\Debug\net6.0\refint\Classes.dll
 E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Classes\obj\Debug\net6.0\Classes.pdb
 E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Classes\obj\Debug\net6.0\ref\Classes.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Classes\obj\Debug\net6.0\Classes.sourcelink.json

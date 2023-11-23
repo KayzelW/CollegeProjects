@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Apd5EK1aVW9Vu4/J4+vJfAkpUM2Sdk7u8O2iqQFubuGRI/OhQMT4+bjmjggrRkEl8qQWRzMfDd10aPilWa+HTg==",
+  "dgSpecHash": "h60Iur22+cb1wx2DfPuMoxxuYQa1jhO0e9I79bcdKkRM0Lz95qEMmOzCi2AEGiC+h8M1r2O9WUT215PnLX7Qqw==",
   "success": true,
   "projectFilePath": "E:\\CollegeProjects\\projects\\CS_Ulearn.me\\Полезные знакомства\\Полезные знакомства.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.24\\microsoft.netcore.app.ref.6.0.24.nupkg.sha512",
-    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.24\\microsoft.windowsdesktop.app.ref.6.0.24.nupkg.sha512",
-    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.24\\microsoft.aspnetcore.app.ref.6.0.24.nupkg.sha512",
-    "C:\\Users\\Kayzel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.24\\microsoft.netcore.app.host.win-x64.6.0.24.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
