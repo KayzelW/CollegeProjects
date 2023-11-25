@@ -1,0 +1,1 @@
+Протестированный C код на onlinegdb: https://onlinegdb.com/CJlUMRlhS

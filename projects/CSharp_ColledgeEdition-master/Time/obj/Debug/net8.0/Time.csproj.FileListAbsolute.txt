@@ -1,0 +1,12 @@
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Time\bin\Debug\net8.0\Time.deps.json
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Time\bin\Debug\net8.0\Time.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Time\bin\Debug\net8.0\Time.pdb
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Time\obj\Debug\net8.0\Time.GeneratedMSBuildEditorConfig.editorconfig
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Time\obj\Debug\net8.0\Time.AssemblyInfoInputs.cache
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Time\obj\Debug\net8.0\Time.AssemblyInfo.cs
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Time\obj\Debug\net8.0\Time.csproj.CoreCompileInputs.cache
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Time\obj\Debug\net8.0\Time.sourcelink.json
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Time\obj\Debug\net8.0\Time.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Time\obj\Debug\net8.0\refint\Time.dll
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Time\obj\Debug\net8.0\Time.pdb
+E:\CollegeProjects\projects\CSharp_ColledgeEdition-master\Time\obj\Debug\net8.0\ref\Time.dll
